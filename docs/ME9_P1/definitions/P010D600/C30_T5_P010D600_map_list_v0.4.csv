@@ -1,0 +1,1343 @@
+name,description,type,file_address,rows,cols,bits,sign,factor,unit,how_located,vs_2006_file,row_axis_addr,col_axis_addr
+KFMI_UC,map of optimum engine torque in instruction test,map,0x1C4372,8,8,8,unsigned,0.390625,%,ford:high,,0x1C4488,0x1C447F
+KFZW_UC,map of optimum ignition angle in instruction test,map,0x1C43B2,8,8,8,signed,0.75,Grad KW,ford:sig,,0x1C4488,0x1C447F
+KLDZWOM_UC,temperature-dependent offset of opt. ignition angle in instruction test,curve,0x1C43FB,8,1,8,unsigned,0.75,Grad KW,ford:high,,0x1C43F3,
+KLETAZW_UC,ignition efficiency depending on delta ignition angle in instruction test,curve,0x1C440C,8,1,8,unsigned,0.5,%,ford:high,,0x1C4404,
+KLFAKSP_UC,characteristic line for efficiency of split in instruction test,curve,0x1C4414,8,1,8,unsigned,0.5,%,ford:high,,0x1C447F,
+KLZL1_UC,ignition angle correction due to air-fuel ratio(1st Bank) in instruction test,curve,0x1C4425,8,1,8,unsigned,0.75,Grad KW,ford:high,,0x1C441D,
+KLZL2_UC,ignition angle correction due to air-fuel ratio(2nd Bank) in instruction test,curve,0x1C4436,8,1,8,unsigned,0.75,Grad KW,ford:high,,0x1C442E,
+MZF_REG_DAT_UC,,map,0x1C45B1,16,8,8,unsigned,0.390625,%,ford:sig,,,
+KFDMP0_UC,map 0 for pedal dependant portion of torque loss in instruction test,map,0x1C4618,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48AB,0x1C48A2
+KFDMP1_UC,map 1 for pedal dependant portion of torque loss in instruction test,map,0x1C4658,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48AB,0x1C48A2
+KFDMT0_UC,map 0 for temperature dependent torque in instruction level,map,0x1C4698,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48F6,0x1C48A2
+KFDMT1_UC,map 1 for temperature dependent torque in instruction level,map,0x1C46D8,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48F6,0x1C48A2
+KFMMKH_UC,Characteristic map higher permitted torque during Kat-heating in instruction tes,map,0x1C4718,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48F6,0x1C48A2
+KFMOF_UC,map for offset tolerance depending on permissible torque in instruction test,map,0x1C4758,8,8,8,unsigned,0.390625,%,ford:high,,0x1C4839,0x1C48A2
+KFPZU0_UC,map 0 for  rel. permissible torque from the pedal position in instruction test,map,0x1C4798,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48AB,0x1C48A2
+KFPZU1_UC,map 1 for  rel. permissible torque from the pedal position in instruction test,map,0x1C47D8,8,8,8,unsigned,0.390625,%,ford:high,,0x1C48AB,0x1C48A2
+KLLLRZU_UC,characteristic of permitted torque for idle speed control in instruction test,curve,0x1C4818,8,1,8,unsigned,0.390625,%,ford:high,,0x1C48A2,
+KLMIMAX_UC,characteristic of maximum torque in instruction test,curve,0x1C4820,8,1,8,unsigned,0.390625,%,ford:high,,0x1C48A2,
+KLMIMIN_UC,characteristic of minimal torque in instruction test,curve,0x1C4828,8,1,8,unsigned,0.390625,%,ford:high,,0x1C48A2,
+KLMZUMN_UC,charcteristic for engine speed dependent torque in instruction test,curve,0x1C4830,8,1,8,unsigned,0.390625,%,ford:high,,0x1C48A2,
+KLNPED_UC,"Speed lim. as func. of nom. pedal value, in DK drive standby; instruction test",curve,0x1C4929,8,1,8,unsigned,40.0,1/min,ford:high,,0x1C4921,
+FWRLDKNM,char. for weighting rel. air charge calc. from throttle valve sig. in dep. nmot,curve,0x1C4AD2,6,1,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1C4AC6,
+KFMLDMX,air mass flow threshold for max. failure,map,0x1C4B2E,8,9,16,signed,0.1,kg/h,ford:sig,,0x1C4B0C,
+KFKHFM,HFM-correction characteristic map,map,0x1C4BE6,14,14,8,unsigned,0.0078125,-,ford:high,,0x1C4BCA,0x1C4BD8
+DWDKSBAMX,Max. setpoint/actual DK angle deviation as f(dwdks),curve,0x1C4EA0,5,1,16,unsigned,0.0015259021896696422,%DK,ford:sig,,0x1C4E96,
+KFMSNWDKVP,standardised air mass flow through throttle valve,map,0x1C4F30,16,8,16,unsigned,0.1,kg/h,ford:sig,,0x1C4F00,0x1C4F20
+KLAF,characteristic of Saint-Venant,curve,0x1C5232,513,1,16,unsigned,3.0517578125e-05,-,ford:sig,,,
+FPWDKAPP,"throttle angle dependent on accelerator pedal position, only for calibration",curve,0x1C5464,16,1,16,unsigned,0.00152587890625,%,ford:sig,,0x1C5444,
+KFWDKMSNVP,desired throttle angle,map,0x1C54BA,16,8,16,unsigned,0.00152587890625,%,ford:sig,,0x1C548A,0x1C54AA
+WDKUGDN,throttle angle necessary for 95 % of the maximum possible air charge,curve,0x1C55EE,12,1,8,unsigned,0.390625,%,ford:sig,,0x1C55D6,
+DKNOTBEGR,Limtation of set value as f(nmot) if B_dknot = true,curve,0x1C5607,8,1,16,unsigned,0.0015259021896696422,%DK,ford:sig,,0x1C55FF,
+DMSFUEDRL,P-component of air mass controller,curve,0x1C5623,8,1,16,signed,0.1,kg/h,ford:sig,,,
+TFWDKPN,time constant for filtering DK angle before comp. with subs. value from charging,curve,0x1C564B,6,1,8,unsigned,1.0,s,ford:sig,,0x1C5645,
+KFWDKSST,desired throttle position at start-up,map,0x1C5672,12,4,8,unsigned,0.39215686274509803,%DK,ford:high,,0x1C5662,0x1C566E
+KLWDKPED,Offset desired throttle position at start-up,curve,0x1C56A6,3,1,8,unsigned,0.39215686274509803,%DK,ford:sig,,0x1C56A3,
+KTNWSABGKA,Time constant f. des.val.change limit. exhaust cam. cold,map,0x1C56F0,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+KTNWSNABGA,Time constant f. neg. des.val.change limit exhaust cam.,map,0x1C5709,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+KTNWSPABGA,Time constant f. pos. des.val.change limit. exhaust cam.,map,0x1C5722,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+KTNWSABGKE,Time constant f. limit. of des. value change (intake camshaft / cold),map,0x1C5740,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+KTNWSNABGE,Time constant f. negative limit. of des. value change (intake camshaft),map,0x1C5759,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+KTNWSPABGE,Time constant f. positive limit. of des. value change (intake camshaft),map,0x1C5772,5,5,8,unsigned,1.0,s,ford:high,,0x1C5793,0x1C5799
+FTANWUBA,Correction factor: duty cycle of outlet camshaft f(ub),curve,0x1C57A6,6,1,8,unsigned,0.0078125,-,ford:high,,0x1C57A0,
+KLWNWSLRA,Characteristic line for setpoint-outlet-camphaser error simulation,curve,0x1C57C3,6,1,16,signed,0.0078125,Grad KW,ford:sig,,,
+FTANWUBE,Correction factor: duty cycle of intake camshaft f(ub),curve,0x1C57FE,6,1,8,unsigned,0.0078125,-,ford:high,,0x1C57F8,
+KLWNWSLRE,Characteristic line for setpoint-inlet-camphaser error simulation,curve,0x1C581B,6,1,16,signed,0.0078125,Grad KW,ford:sig,,,
+NWENGFS,Delta Fuel cut-in engine speed with Drive,curve,0x1C5871,5,1,8,unsigned,40.0,1/min,volvo:sig,same,,
+KFMIMAXFHO,Map max. available crankshaft torque,map,0x1C58A8,6,16,16,unsigned,0.00152587890625,%,ford:sig,,0x1C5892,
+KFMIVERLMT,Map torque loss of gearbox (M/T),map,0x1C598A,8,8,16,unsigned,0.00152587890625,%,ford:sig,,0x1C597A,
+LALIO,Characteristic line lambda=f(oxygen concentration),curve,0x1C5F63,25,1,16,unsigned,0.000244140625,-,ford:sig,,,
+LRSMODMS,Characteristic line amplitude of a/f ratio modulation in LRS,curve,0x1C5FA6,6,1,8,unsigned,0.0009765625,-,ford:sig,,0x1C5F9A,
+O2VK,"calculation voltage / O2, LSU sensor upstream of the catalyzer",curve,0x1C5FEB,16,1,16,signed,0.0009765625,% O2,ford:sig,,,
+KLKTKVK,characteristic line: proportional factor between temp. deviation and corr.factor,curve,0x1C603C,11,1,16,unsigned,3.0517578125e-05,-,ford:sig,,,
+RLLRUN,"char.line above nmot,lower rL control limit for controller in front of catalyst",curve,0x1C6097,8,1,8,unsigned,0.75,%,ford:high,,0x1C608F,
+TLRBAM,blocking time for activation LC after acceleration enrichment,curve,0x1C60B1,8,1,16,unsigned,0.01,s,ford:high,,0x1C60A9,
+TLRVAM,blocking time for activation LC after deceleration enleanment,curve,0x1C60CB,8,1,16,unsigned,0.01,s,ford:high,,0x1C60C3,
+KLTATRS,Set temperature for exhaust gas temperature control,curve,0x1C60E3,6,1,16,unsigned,0.0234375,Grad C,ford:high,,0x1C60DD,
+KLTWISTS,Set temperature for temperature between outlet valves,curve,0x1C60F7,6,1,16,unsigned,0.0234375,Grad C,ford:high,,0x1C60F1,
+IMLKHTMS,"imlpr-threshold, changing to lambda catalyst heating",curve,0x1C610D,8,1,8,unsigned,0.00390625,-,ford:sig,,0x1C6105,
+FATMALA,Factor loss of heat at wall of turbo charger housing,curve,0x1C61B6,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1C61A6,
+FATMVLA,Loss of heat of turbo charger housing to the environment by airstream,curve,0x1C61D6,7,1,16,unsigned,0.001736111111,J/sK,ford:high,,0x1C61C8,
+FATMAST,Factor loss of heat from exhaust gas up to fin,curve,0x1C61F6,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1C61E6,
+LALIUSHK,"lambda linearization, sensor behind catalyst, quantification 0 ...<2",curve,0x1C6239,10,1,16,unsigned,3.0517578125e-05,-,ford:sig,,,
+KLNSADI,Characteristic line integrator part of afterstart adaptation,curve,0x1C6293,2,1,16,signed,3.0517578125e-05,-,ford:sig,,0x1C6291,
+KLNSADP,Characteristic line proportional part afterstart adaptation,curve,0x1C62A1,6,1,16,unsigned,3.0517578125e-05,-,ford:sig,,,
+KLZKNSADI,Characteristic line integrator time constant afterstart adaptation,curve,0x1C62BB,6,1,16,unsigned,1.52587890625e-05,-,ford:sig,,,
+KFFWLRL,map warm-up factor load dependent fraction,map,0x1C62D2,8,6,8,unsigned,0.0078125,-,ford:high,,0x1C8D2A,0x1C8D08
+KFNSWRL,weighting of afterstart enrichment,map,0x1C6302,8,6,8,unsigned,0.0078125,-,ford:high,,0x1C8D2A,0x1C8D08
+KFWWLML,map weighting warm-up factor,map,0x1C6332,6,8,8,unsigned,0.0078125,-,ford:high,,0x1D4190,0x1C8D2A
+KFKATI,map correction of afterstart-factor over anzti,map,0x1C6392,12,12,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1C637A,
+KFNSFLLRI,offset afterstart enrichment dependent on LLR,map,0x1C64BE,6,12,16,unsigned,3.0517578125e-05,-,ford:high,,0x1C8D4A,0x1D417B
+KFHSTT,factor hot start,map,0x1C655B,6,3,8,unsigned,0.25,-,ford:high,,0x1C6552,0x1C6558
+KFWHSTT,map weighting of hot start factor,map,0x1C657D,6,8,8,unsigned,0.0078125,-,ford:high,,0x1C656F,0x1C6575
+KFWKSTN,map weighting of factor cold start,map,0x1C65B7,4,4,8,unsigned,0.00390625,-,ford:high,,0x1C65AF,0x1C65B3
+KFWKSTT,map weighting of factor cold start,map,0x1C65E3,12,14,8,unsigned,0.0078125,-,ford:high,,0x1C65C9,0x1C65D5
+KLTMOTDIFF,Difference of engine temperature during ecu-afterrun for condition hot start,curve,0x1C6692,6,1,8,unsigned,0.75,Grad C,ford:high,,0x1C668C,
+TANDT,threshold difference intake air temperature for hot start,curve,0x1C66A1,8,1,8,unsigned,0.75,Grad C,ford:high,,0x1C6699,
+TMODT,Threshold difference coolant temperature for hot start,curve,0x1C66B1,3,1,8,unsigned,0.75,Grad C,ford:high,,0x1C66AE,
+FKSTT,factor cold start,curve,0x1C66C5,12,1,16,unsigned,0.0009765625,-,ford:high,,0x1C66B9,
+KFWKSTAB,factor cold re-start for reduction of starting fuel,map,0x1C66EA,4,4,8,unsigned,0.0078125,-,ford:sig,,,
+TWSTT,threshold soak time for re-start,curve,0x1C6716,12,1,16,unsigned,1.0,s,ford:high,,0x1C66FE,
+FUKLAMSBG,Kl. factor desired lambda limitation,curve,0x1C6742,6,1,16,unsigned,3.0517578125e-05,-,ford:high,,0x1C6736,
+FUKTINEO,Crv. factor: injection time after intake valve opens,curve,0x1C675C,6,1,16,unsigned,3.0517578125e-05,-,ford:high,,0x1C6750,
+FWEMRFA,factor restart fuel mass dependent of desired torque,curve,0x1C6806,6,1,8,unsigned,0.0078125,-,ford:high,,0x1C67FA,
+REDABM,fuel cut-off table for torque reduction,map,0x1C696A,5,5,8,unsigned,1.0,,ford:sig,,,
+KFFZTM0,TMOT dependant correction for cylinder individual injection for cylinder 0 -7,map,0x1C6986,4,9,8,unsigned,0.00195313,-,ford:high,,0x1C6979,0x1C697D
+KFFZTM1,,map,0x1C69B9,4,9,8,unsigned,0.00195313,-,ford:high,,0x1C69AC,0x1C69B0
+KFFZTM2,,map,0x1C69EC,4,9,8,unsigned,0.00195313,-,ford:high,,0x1C69DF,0x1C69E3
+KFFZTM3,,map,0x1C6A1F,4,9,8,unsigned,0.00195313,-,ford:high,,0x1C6A12,0x1C6A16
+KFFZTM4,,map,0x1C6A52,4,9,8,unsigned,0.00195313,-,ford:high,,0x1C6A45,0x1C6A49
+KFWEE,characteristic map angle end of injection,map,0x1C6B12,8,8,8,unsigned,6.0,Grad KW,volvo:high,changed,0x1C6C0A,0x1C6BE5
+KFWEEK,map for end of injection angle (cold parameters),map,0x1C6B52,8,8,8,unsigned,6.0,Grad KW,ford:high,,0x1C6C0A,0x1C6BE5
+KFWEEST,characteristic map angle end of injection during start,map,0x1C6BA4,8,8,8,unsigned,6.0,Grad KW,volvo:high,same,0x1C6B94,0x1C6B9C
+WEESTSM,"angle end of injection for simultaneous pulses during start, f(tmot)",curve,0x1C6BF4,6,1,8,unsigned,2.8125,°KW,volvo:high,same,0x1C6BEE,
+KLWEESTN,angle 'End of ignition' during start-up,curve,0x1C6C04,4,1,8,unsigned,6.0,Grad KW,ford:high,,0x1C6BFC,
+FAKEZ,Constant array of cyl. specific correction factors of effective injection period,curve,0x1C6C2E,5,1,8,signed,3.0517578125e-05,-,volvo:sig,changed,0x1C6C29,
+KLPND,Characteristic for switchover of sensor voltage into fuel pressure,curve,0x1C6C3A,3,1,16,unsigned,0.1,kPa,ford:high,,0x1C6C34,
+FSZTM,Factor dwell angle correction tmot depending,curve,0x1C6C4B,5,1,8,unsigned,0.0078125,-,volvo:high,same,0x1C6C46,
+KFFFANZ,Number of sequential sparks,map,0x1C6C63,8,8,8,unsigned,1.0,,ford:high,,0x1C6C53,0x1C6C5B
+TSUB,dwell period,curve,0x1C6CB5,16,1,16,unsigned,0.001,ms,ford:high,,0x1C6CA5,
+FFLDZ,Follow-on ignition charging time,curve,0x1C6CDF,8,1,16,unsigned,0.001,ms,ford:high,,0x1C6CD7,
+KFDWSZ,delta ignition angle map for selective ignition control,map,0x1C6CF5,16,12,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFDWSZ2,bei NWV,map,0x1C6DB5,16,12,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZW,Ignition advance-angle characteristik map,map,0x1C6E75,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZW2,Ignition angle performance characteristics variant 2,map,0x1C6F35,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWA,Ignition angle correction by intake air and load,map,0x1C6FF5,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWA2,"Ignition angle map: exhaust camshaft max. adjusted, variant 2",map,0x1C70B5,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFDZWMNWE,delta ignition angle at fuel feed restart for retardet ignition angle,map,0x1C7178,16,12,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFDZWOPWE,delta ignition angle at fuel feed restart for optimal ignition angle,map,0x1C7238,16,12,8,unsigned,0.75,Grad KW,volvo:high,changed,0x1C8DC4,0x1C8DE6
+KLFANZWE,weighting factor for ignition angle correction by number of processed cut-in cyl,curve,0x1C730B,18,1,8,unsigned,0.015625,-,ford:high,,0x1C72F9,
+KFDZMNST,Map for offset minimal ignition angle during after-start overshoot,map,0x1C7322,4,4,8,unsigned,0.75,Grad KW,volvo:med,same,0x1C763A,
+KFZWMN,"Map for minimal ignition angle, describes burning limit.",map,0x1C7332,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWMNKH,Map for minimal ignition angle catalyst warm-up,map,0x1C73F2,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWMNST,minimal ignition spark advance for engine start and after start,map,0x1C74B2,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWMS,"Map for ignition value as latest possible value, describes temperature limit.",map,0x1C7572,16,12,8,signed,0.75,Grad KW,volvo:high,same,0x1C8DC4,0x1C8DE6
+KFZWSTTM,Ignition angle during start,map,0x1C7652,6,6,8,unsigned,0.75,Grad KW,volvo:sig,changed,0x1C7646,0x1C764C
+KFMAKR,map for starting measuring window knock control,map,0x1C7686,16,4,8,unsigned,0.75,Grad KW,volvo:high,same,0x1D4116,0x1D4127
+KEMLN,length of the sampling window for knock control,curve,0x1C76C6,16,1,8,signed,0.75,Grad KW,ford:sig,,0x1D4116,
+FMFKRZN,filter selection knock control,map,0x1C76E4,4,8,16,unsigned,1.0,,ford:sig,,,
+KFKE0,Knock-detection factor characteristic map cylinder counter 0,map,0x1C7B44,16,4,8,unsigned,0.0625,-,ford:high,,0x1D4116,0x1D4127
+KFKE1,Knock-detection factor characteristic map cylinder counter 1,map,0x1C7B84,16,4,8,unsigned,0.0625,-,ford:high,,0x1D4116,0x1D4127
+KFKE2,Knock-detection factor characteristic map cylinder counter 2,map,0x1C7BC4,16,4,8,unsigned,0.0625,-,ford:high,,0x1D4116,0x1D4127
+KFKE3,Knock-detection factor characteristic map cylinder counter 3,map,0x1C7C04,16,4,8,unsigned,0.0625,-,ford:high,,0x1D4116,0x1D4127
+KFKE4,Knock-detection factor characteristic map cylinder counter 4,map,0x1C7C44,16,4,8,unsigned,0.0625,-,ford:high,,0x1D4116,0x1D4127
+RKRMX1N,Maximum of reference level for knock detection threshold cylinder group 1,curve,0x1C7C84,16,1,16,unsigned,0.0006103515625,V,ford:sig,,0x1D4116,
+RKRMX2N,maximum of reference level for knock detection threshold cylinder group 2,curve,0x1C7CA4,16,1,16,unsigned,0.0006103515625,V,ford:sig,,0x1D4116,
+KFKRINT1G,knock control: weighting integration value channel 1,map,0x1C7CD2,8,4,16,signed,0.1,-,ford:sig,,,
+KFKRINT2G,knock control: weighting integration value channel 2,map,0x1C7D2E,8,4,16,signed,0.1,-,ford:sig,,,
+KFKRINT3G,knock control: weighting integration value channel 3,map,0x1C7D8A,8,4,16,signed,0.1,-,ford:sig,,,
+KRFTPNG,kc: low pass charateristic normal,curve,0x1C7DE1,8,1,16,unsigned,1.0,,ford:sig,,,
+KRRKRGN,kc: weighting for limitation refernce value calculation without knocking,curve,0x1C7E03,8,1,8,unsigned,0.0625,-,ford:high,,0x1C7DFB,
+KFKRFKN,retard step knock occurrence,map,0x1C7E58,16,4,8,signed,0.75,Grad KW,ford:high,,0x1C7E44,0x1C7E54
+NMXDAE,Maximum permissible engine speed at throttle actuator limp-home operation,curve,0x1C7E9F,6,1,8,unsigned,32.0,U/min,volvo:sig,same,0x1C7E99,
+KLMIMIN or UEVERG,AMBIGUOUS NAME (pack lists several names at this address). table for minimum indicated engine torque,curve,0x1C8037,8,1,8,signed,0.00152587890625,%,volvo:sig,same,0x1C802F,
+KLALETM,charakteristic for the turnback tooth periods,curve,0x1C8064,3,1,8,unsigned,1.0,ms,ford:high,,0x1C8061,
+KLDIFSEG,Fixed value characteristic for weighting the angular displacement,curve,0x1C80C1,16,1,8,unsigned,0.00390625,-,ford:sig,,,
+KLDTPH,Fixed value characteristic for weighting the engine dynamic,curve,0x1C80D1,16,1,8,unsigned,0.00390625,-,ford:sig,,,
+KLDTPHST,Fixed value characteristic for the engine start,curve,0x1C80E1,16,1,8,unsigned,0.00390625,-,ford:sig,,,
+KLWNWPAS,Fixed value characteristic for weighting the angular displacement,curve,0x1C80F1,16,1,8,unsigned,0.01,-,ford:sig,,,
+KLDYNCOR,Value for the dynamic correction after the first ignition,curve,0x1C80F5,4,1,16,unsigned,5.0,us,ford:sig,,0x1C80F1,
+LURKHE,Engine roughness reference corr. value at cat heating in 1. interval,curve,0x1C877D,6,1,16,unsigned,0.00277555859375,(1/min/s)^2,ford:sig,,,
+LURST,"reference correction factor for engine roughness, after start",curve,0x1C8797,6,1,16,unsigned,0.00277555859375,(1/min/s)^2,ford:sig,,,
+KFKSWFS,"map for catalyst protection, weighting factors",map,0x1C896E,6,6,8,unsigned,1.0,,ford:sig,,0x1C8962,0x1C8968
+KLAMAT,Vector including constants,curve,0x1C8A4E,8,1,16,unsigned,1.52587890625e-05,-,ford:sig,,0x1C8A3E,
+TMLRTMS,engine temp. threshold for lambda control depending on cranking temp. tmst,curve,0x1C8A63,4,1,8,unsigned,0.75,Grad C,ford:high,,0x1C8A5F,
+NARASTGU or NARLLGA,AMBIGUOUS NAME (pack lists several names at this address). Gear dependent engine speed threshold for activation of anti jerk function,curve,0x1C8E32,8,1,8,unsigned,40.0,1/min,ford:sig,,,
+NDFILOG,Threshold for filter output ndfil,curve,0x1C8E71,8,1,16,unsigned,0.25,1/min,ford:sig,,,
+FGMIFABG,Weighting factor for excess via KFWMIFABG,curve,0x1C8EAD,8,1,8,unsigned,0.0078125,-,ford:sig,,,
+KFWMIFABG,Excess factor for torque change limitation,map,0x1C8EBE,4,4,8,unsigned,0.015625,-,ford:high,,0x1C8EB6,0x1C8EBA
+KFWMIFAL,excessive increase factor for charge path at load-shock damping,map,0x1C8ED8,4,4,8,unsigned,0.015625,-,ford:high,,0x1C8ED0,0x1C8ED4
+KFWPGNM1,correction factor for time constant for negative torque slope limitation,map,0x1C8F8E,8,6,16,signed,0.0078125,-,volvo:med,same,,
+KFDMLSDS,delta torque for triggering of load-shock damping after shifting procedure,map,0x1C8FEE,8,6,16,unsigned,0.00152587890625,%,ford:high,,0x1D40DF,0x1D41C6
+KFLSDWA,Delta torque: release of load reversal damping at open lockup clutch,map,0x1C905B,8,3,16,unsigned,0.00152587890625,%,ford:sig,,,
+KFMIFABG,delta torque for gradient limitation,map,0x1C90B6,8,8,16,unsigned,0.00152587890625,%,ford:sig,,,0x1C90A6
+KFMIFABGWK,delta torque for gradient limitation at open clutch,map,0x1C9152,8,4,16,unsigned,0.00152587890625,%,ford:sig,,,0x1C914A
+KFMIFALS,Indicated driver's request torque for charge path at load-shock damping,map,0x1C91A6,8,8,16,unsigned,0.00152587890625,%,ford:sig,,0x1C9196,
+KFMILSD,Initial value for positive torque slope limitation,map,0x1C924E,6,8,16,unsigned,0.00152587890625,%,ford:high,,0x1C9232,0x1C923E
+TDMFWEMI,filter-time constant at hard fuel cut-in,curve,0x1C92D4,8,1,16,unsigned,1.0,s,volvo:high,same,0x1C92C4,
+TIPINOFSET,delta torque for intitialize at dashpot,curve,0x1C92EE,4,1,16,unsigned,0.00152587890625,%,volvo:high,same,0x1C92E6,
+KFPED,accelerator pedal characteristic,map,0x1C92F8,16,12,16,unsigned,0.0030517578125,%,volvo:high,same,0x1C9794,0x1C977A
+KFPEDL,relative driver request for low speed driving,map,0x1C9478,16,12,16,unsigned,0.0030517578125,%,volvo:high,same,0x1C9794,0x1C977A
+KFPEDR,Pedal characteristic for reverse gear (only automatic transmission),map,0x1C95F8,16,12,16,unsigned,0.0030517578125,%,volvo:high,same,0x1C9794,0x1C977A
+TVLLRI,delay time to enable I-component after start-up,curve,0x1C97C0,6,1,8,unsigned,0.02,s,volvo:high,same,0x1C97BA,
+TVLLRPD,Maximal delay time to enable PD components after start-up,curve,0x1C97CD,6,1,8,unsigned,0.02,s,volvo:high,same,0x1C97C7,
+PVLDNEZ,LLR: P-gain for vehicle at rest (air path),map,0x1C984A,10,4,8,unsigned,0.00152587890625,-,volvo:high,same,,0x1C98C3
+PVLDNEZKH,ISC proportional part on air-path,map,0x1C9872,10,4,8,unsigned,0.00152587890625,-,volvo:med,changed,,0x1C98C3
+PVLDNEZV,LLR: P-gain for vehicle rolling (air path),map,0x1C989A,10,4,8,unsigned,0.00152587890625,-,volvo:high,same,,0x1C98C3
+DMLLNGEZ,LLR: D-gain depending of ngasf for air path,map,0x1C98E8,6,4,16,unsigned,0.0030515625,%/(1/min),volvo:sig,same,,
+DMLLNGEZV,LLR: D-gain depending of ngasf for air path,map,0x1C992A,6,4,16,unsigned,0.0030515625,%/(1/min),volvo:sig,same,,
+FABMDWA,Factor to decrease the converter torque depending of nturb,curve,0x1C997D,6,1,8,unsigned,0.00390625,-,volvo:high,same,0x1C9977,
+KFMDWMX,Max. limit for torque taken up by converter,map,0x1C9996,6,8,8,unsigned,0.390625,%,volvo:high,same,0x1C9988,0x1C998E
+FRLMNHO,correction factor rlmin depending on altitude,curve,0x1C9A55,5,1,8,unsigned,0.0078125,-,ford:sig,,0x1C9A50,
+KFMIRL,map for calculation of nominal charge,map,0x1C9AA0,16,16,16,unsigned,0.0234375,%,volvo:sig,changed,0x1C9A60,0x1C9A80
+ETADZW,spark efficiency depending on delta ignition angle,curve,0x1C9DF8,127,1,8,unsigned,0.5,%,ford:sig,,,
+ETALAM,Lambda effeciency,curve,0x1C9E02,10,1,8,unsigned,0.5,%,volvo:high,same,0x1C9DF8,
+KFZWOP,optimum ignition angle,map,0x1C9E0C,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOP2,"Optimum ignition angle, variant 2",map,0x1C9EBC,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOP3,Optimum ignition angle variant 3,map,0x1C9F6C,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOP4,Optimum ignition angle variant 4,map,0x1CA01C,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOPA,optimal ignition angle for continuous exhaust valve camshaft-control position 0,map,0x1CA0CC,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOPA2,optimal ignition angle for continuous exhaust valve camshaft-control position 1,map,0x1CA17C,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOPA3,optimal ignition angle for continuous exhaust valve camshaft-control position 2,map,0x1CA22C,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+KFZWOPA4,optimal ignition angle for continuous exhaust valve camshaft-control position 3,map,0x1CA2DC,16,11,8,unsigned,0.75,Grad KW,volvo:high,same,0x1C8DA2,0x1CA50E
+DZWOLA,Lambda dependency of optimum ignition angle referred to Lambda 1,curve,0x1CA397,10,1,8,signed,0.75,Grad KW,ford:high | CONFIRMED code+log 2026-11-18 (dzwol in zwgru),,0x1CA38D,
+DZWOM,temperature-dependent offset of optimum ignition angle,curve,0x1CA3A7,5,1,8,signed,0.75,Grad KW,ford:high,,0x1CA3A2,
+KFMIOP,map optimum engine torque,map,0x1CA3AC,16,11,16,unsigned,0.00152587890625,%,ford:high,,0x1C8DA2,0x1CA50E
+KFMI_UM,map of optimum engine torque in function monitoring,map,0x1CA54C,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA8E0,0x1CA85B
+KFZW_UM,map of optimum ignition angle,map,0x1CA58C,8,8,8,signed,0.75,Grad KW,ford:sig,,0x1CA8E0,0x1CA85B
+KLDZWOM_UM,temperature-dependent offset of opt. ignition angle in monitoring,curve,0x1CA5D5,8,1,8,unsigned,0.75,Grad KW,volvo:high,same,0x1CA5CD,
+KLETAZW_UM,ignition efficiency depending on delta ignition angle in monitoring,curve,0x1CA5E6,8,1,8,unsigned,0.5,%,volvo:high,same,0x1CA5DE,
+KLFAKSP_UM,characteristic line for efficiency of split in function monitoring,curve,0x1CA5EE,8,1,8,unsigned,0.5,%,ford:high,,0x1CA85B,
+KLZL1_UM,ignition angle correction due to air-fuel ratio(1st Bank) in function monitoring,curve,0x1CA5FF,8,1,8,unsigned,0.75,Grad KW,volvo:high,same,0x1CA5F7,
+KLZL2_UM,ignition angle correction due to air-fuel ratio(2nd Bank) in function monitoring,curve,0x1CA610,8,1,8,unsigned,0.75,Grad KW,volvo:high,same,0x1CA608,
+KFDMP0_UM,map 0 for pedal dependant portion of torque loss,map,0x1CA620,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA8F2,0x1CA85B
+KFDMP1_UM,map 1 for pedal dependant portion of torque loss,map,0x1CA660,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA8F2,0x1CA85B
+KFDMT0_UM,map 0 for temperature dependent torque,map,0x1CA6A0,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA84C,0x1CA85B
+KFDMT1_UM,map 1 for temperature dependent torque,map,0x1CA6E0,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA84C,0x1CA85B
+KFMMKH_UM,Characteristic map higher permitted torque during Kat-heating,map,0x1CA720,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA84C,0x1CA85B
+KFMOF_UM,map for offset tolerance depending on permissible torque,map,0x1CA760,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA841,0x1CA85B
+KFPZU0_UM,map 0 for  rel. permissible torque from the pedal position in torque monitoring,map,0x1CA7A0,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA8F2,0x1CA85B
+KFPZU1_UM,map 1 for  rel. permissible torque from the pedal position in torque monitoring,map,0x1CA7E0,8,8,8,unsigned,0.390625,%,ford:high,,0x1CA8F2,0x1CA85B
+KLLLRZU_UM,characteristic of permitted torque for idle speed control,curve,0x1CA820,8,1,8,unsigned,0.390625,%,ford:high,,0x1CA85B,
+KLMIMAX_UM,characteristic of maximum torque,curve,0x1CA828,8,1,8,unsigned,0.390625,%,ford:high,,0x1CA85B,
+KLMIMIN_UM,characteristic of minimal torque,curve,0x1CA830,8,1,8,unsigned,0.390625,%,ford:high,,0x1CA85B,
+KLMZUMN_UM,characteristic for engine speed dependent torque,curve,0x1CA838,8,1,8,unsigned,0.390625,%,ford:high,,0x1CA85B,
+KLNPED_UM,"Speed lim. as func. of nominal pedal value, in DK drive standby func.,func.mon.",curve,0x1CA863,8,1,8,signed,40.0,1/min,volvo:high,same,0x1CA85B,
+KLNPED_UM,"Speed lim. as func. of nominal pedal value, in DK drive standby func.,func.mon.",curve,0x1CA879,8,1,8,unsigned,40.0,1/min,volvo:high,same,0x1CA871,
+WPACCONV,Convertion factor AC pressure sensor,curve,0x1CAA91,5,1,8,unsigned,13.54,kPa,ford:sig,,,
+KLPSACL,"ac-pressure (lowside), conversion voltage to hPa",curve,0x1CAB1C,17,1,16,unsigned,0.078125,hPa,ford:sig,,,
+KLCVRMNLIM,Minimum charge voltage at present enginge speed if B_encvred is set,curve,0x1CAB87,8,1,8,unsigned,0.1,V,ford:high,,0x1CAB7F,
+KLNCUTOFF,Characteristic map for alternator LoadResponseRamp - cutoff speed 'ncutoff',curve,0x1CABA0,16,1,8,unsigned,40.0,1/min,ford:high,,0x1CAB90,
+KLREDCVR,Delta reduction in charge voltage,curve,0x1CABB9,8,1,8,unsigned,0.1,V,ford:high,,0x1CABB1,
+KFACTGENI,Characteristic map: actual generated 12V alternator current,map,0x1CAC12,9,20,8,unsigned,1.0,A,volvo:high,changed,,0x1CABFE
+KFACTGENIL,Characteristic map: maximum generated 12V current at idle speed,map,0x1CACEE,9,20,8,unsigned,1.0,A,volvo:high,changed,,0x1CACDA
+KFAVGENI,Characteristic map: maximum available 12V current from alternator at present loa,map,0x1CADCA,9,20,8,unsigned,1.0,A,volvo:high,changed,,0x1CADB6
+KFCVRMN,Characteristic map: decrease of voltage setpoint at ramping,map,0x1CAE98,8,8,8,unsigned,0.1,V,volvo:high,same,,0x1CAE90
+KFCVRMX,Characteristic map: maximum increase of voltage setpoint at ramping,map,0x1CAEF2,8,8,8,unsigned,0.1,V,volvo:high,same,,0x1CAEEA
+KFCVRST,Characteristic map: charge voltage during start and warm up,map,0x1CAF46,8,8,8,unsigned,0.1,V,ford:sig,,,
+KFLDRR,Characteristic map for load response time,map,0x1CAFAA,8,10,8,unsigned,0.85,s,volvo:med,same,0x1CAF8E,
+KFALTACTRQ,Characteristic map for alternator actual torque,map,0x1CB072,10,12,16,unsigned,0.035,Nm,ford:sig,,,
+KFFRQFUEL,Fan requirement due to fuel temperature and vehicle velocity,map,0x1CB2E6,5,5,8,unsigned,0.1,-,ford:high,,0x1CB2DC,0x1CB2E1
+KFFRQINL,Fan requirement due to inlet air flow and temperature,map,0x1CB30D,6,6,8,unsigned,0.1,-,ford:high,,0x1CB301,0x1CB307
+EMFRQAC,Emergency fan request due to high AC pressure,curve,0x1CB338,6,1,8,unsigned,0.1,-,ford:high,,0x1CB332,
+EMFRQEN,Emergency fan request due to high engine coolant temperature,curve,0x1CB345,6,1,8,unsigned,0.1,-,ford:high,,0x1CB33F,
+FANDC,Cooling fan duty cycle as function of fan step,curve,0x1CB365,25,1,8,unsigned,0.390625,%TV,ford:high,,0x1CB34C,
+FDCCORR,Fan duty cycle correction curve dependent on battery voltage,curve,0x1CB385,6,1,8,unsigned,0.0078125,-,ford:high,,0x1CB37F,
+FRACCOR,AC fan requirement correction curve,curve,0x1CB392,6,1,8,unsigned,0.00390625,-,ford:high,,0x1CB38C,
+FRQEBAY,Fan requirement due to high engine bay temperature,curve,0x1CB39F,6,1,8,unsigned,0.1,-,ford:high,,0x1CB399,
+FRQENG1,"Fan requirement from engine, curve 1",curve,0x1CB3AC,6,1,8,unsigned,0.1,-,ford:high,,0x1CB3A6,
+FRQENG2,"Fan requirement from engine, curve 2",curve,0x1CB3B9,6,1,8,unsigned,0.1,-,ford:high,,0x1CB3B3,
+FRQPAC1,Fan requirement due to AC pressure 1,curve,0x1CB3C6,6,1,8,unsigned,0.1,-,ford:high,,0x1CB3C0,
+FRQPAC2,Fan requirement due to AC pressure 2,curve,0x1CB3D3,6,1,8,unsigned,0.1,-,ford:high,,0x1CB3CD,
+FRQTECM,Fan requirement due to high ECM temperarute,curve,0x1CB3E0,6,1,8,unsigned,0.1,-,ford:high,,0x1CB3DA,
+KLTUMTHM,Charc. -line for corr. of ambient temp.,curve,0x1CB483,6,1,8,unsigned,0.75,Grad C,ford:sig,,0x1CB47D,
+TWADTHMS,eng. start temp. depend. time for freezing temp. model of thermostat monitoring,curve,0x1CB49A,6,1,8,unsigned,1.0,s,ford:sig,,0x1CB494,
+KFDTHML,map of temperature gradient for thermostat monitoring,map,0x1CB4AD,6,5,8,signed,0.005859375,Grad C/s,ford:sig,,0x1CB4A2,0x1CB4A8
+KFTHMDMMS,temperature gradient of thermostat modelling during fuel cut-off,map,0x1CB4D7,6,4,8,signed,0.005859375,Grad C/s,ford:sig,,0x1CB4CD,0x1CB4D3
+KLSDTHMS,charc.-line for rising constant of thermostat temp.model depend. on start temp.,curve,0x1CB4F7,6,1,16,unsigned,0.000244140625,-,ford:sig,,0x1CB4F1,
+KLPRLDRNA,"Curve for Physical ranking value for boost-pressure control, neg. deviation",curve,0x1CB511,4,1,8,unsigned,1.0,,ford:high,,0x1CB50D,
+KLPRLDRPA,"Curve for Physical ranking value for boost-pressure control, pos. deviation",curve,0x1CB51A,4,1,8,unsigned,1.0,,ford:high,,0x1CB516,
+KLPRLVDMN,Curve for Physical ranking value for leakage upstream throttle valve min-fault,curve,0x1CB523,4,1,8,unsigned,1.0,,ford:high,,0x1CB51F,
+KLPRLVDMX,Curve for Physical ranking value for leakage upstream throttle valve max-fault,curve,0x1CB52C,4,1,8,unsigned,1.0,,ford:high,,0x1CB528,
+KFWPLGTA,map for weighting factor of basic boost pressure as f(tans),map,0x1CB532,8,8,8,unsigned,0.0078125,-,volvo:high,same,0x1C8D6E,0x1C8D33
+KFDPLGU,,map,0x1CB596,8,8,16,unsigned,0.0390625,hPa,volvo:high,same,0x1CB576,0x1CB586
+KFPLGUB,,map,0x1CB63A,8,8,16,unsigned,0.0390625,hPa,volvo:high,same,0x1CB61A,0x1CB62A
+KFVPDKLD,Max. permitted pressure ratio throttle plate for ldra failurepath,map,0x1CB6DA,10,12,8,unsigned,0.015625,-,volvo:high,same,0x1CB6C4,0x1CB6CE
+FVPDKLDUS,Lower threshold f. leakage upstr. the throttle valve: detect. at idle with low t,curve,0x1CB758,5,1,8,unsigned,0.0078125,-,volvo:high,same,0x1CB753,
+KLDLUL,Threshold negative deviation of boost pressure for detecting overcharge pressure,curve,0x1CB766,8,1,8,signed,5.0,hPa,volvo:high,same,,
+NDLDRAPU,Engine speed threshold for LDRA fault path and healing ldo fault path,curve,0x1CB771,2,1,8,unsigned,40.0,1/min,volvo:high,same,0x1CB76F,
+KFLDRXO,Delta load (rL) at overboost condition,map,0x1CB7AA,8,4,8,unsigned,0.75,%,volvo:high,same,0x1CB79E,0x1CB7A6
+TABLDOBN,regulation time for overboost,curve,0x1CB7CA,8,1,8,unsigned,1.0,s,ford:sig,,0x1C8CBB,
+TLDOBAN,processing time for overboost active,curve,0x1CB7D2,8,1,8,unsigned,1.0,s,ford:sig,,0x1C8CBB,
+TLDOBN,lock time for overboost,curve,0x1CB7DA,8,1,8,unsigned,0.05,s,ford:sig,,0x1C8CBB,
+KFLDIMX,map boost control LDR i control limitation,map,0x1CB7E4,16,8,16,unsigned,0.005,%,volvo:high,changed,0x1C8D80,0x1CBCEE
+KFLDRL,Map for linearisation boost pressure =f(TV),map,0x1CB8E4,16,10,16,unsigned,0.005,%,volvo:med,same,0x1C8D80,0x1CBD00
+KFLDRQ0,control parameter Q0 for boost control,map,0x1CBA24,16,4,16,unsigned,0.05,%/100hPa,ford:high,,0x1C8CE7,0x1C8CA8
+KFLDRQ1,control parameter Q1 for boost control,map,0x1CBAA4,16,4,16,unsigned,0.05,%/100hPa,ford:high,,0x1C8CE7,0x1C8CA8
+KFLDRQ2,map control parameter Q2 for boost control,map,0x1CBB24,16,4,16,unsigned,0.05,%/100hPa,ford:high,,0x1C8CE7,0x1C8CA8
+KFLDIOPU,Correction of the duty cycle value by elevation,map,0x1CBBA4,8,8,8,unsigned,0.64,%,volvo:high,same,0x1C8CBB,0x1C8CF8
+LDDIMNN,Safety distance I part boost control distance negativ,curve,0x1CBBE4,8,1,16,signed,0.005,%,ford:sig,,0x1C8D6E,
+LDRQ1ST,Controller parameter Q1 PID-controller at statistate condition,curve,0x1CBC04,16,1,16,unsigned,0.05,%/100hPa,ford:sig,,0x1C8CE7,
+LDIATA,Correction limitation i controller Boost control as function of tans,curve,0x1CBC24,8,1,8,signed,0.64,%,ford:sig,,0x1C8D0F,
+KFRBGOF,,map,0x1CBC40,4,6,16,unsigned,0.005,%,volvo:sig,same,,
+KFLDIWL,correction of LDR I-limitation at warm-up,map,0x1CBC86,8,8,8,signed,0.64,%,ford:high,,0x1CBC76,0x1CBC7E
+NLDIAPU,Engine speed limit for adaption I-part limit,curve,0x1CBCC9,2,1,8,unsigned,40.0,1/min,volvo:high,same,0x1CBCC7,
+LDDIMXN or TLDIAPN,AMBIGUOUS NAME (pack lists several names at this address). Safety distance I part boost control distance,curve,0x1CBCFE,8,1,16,unsigned,0.005,%,volvo:sig,same,0x1CBCEE,
+DPUPVDMN,min pressure after air filter,curve,0x1CBD2C,8,1,16,unsigned,0.0390625,hPa,volvo:high,same,0x1CBD1C,
+VVMDXSN,Maximum compression ratio in higher altitude,curve,0x1CBD4E,8,1,16,unsigned,6.103515625e-05,-,volvo:high,same,0x1CBD3E,
+VVNTUXS,Compression ratio for protection overspeed of supercharger,curve,0x1CBD70,8,1,16,unsigned,6.103515625e-05,-,volvo:high,same,0x1CBD60,
+KFLDRAPP,Map for application boost control without torque coordination,map,0x1CBD94,8,8,8,unsigned,0.390625,%TV,volvo:high,same,0x1CBD84,0x1CBD8C
+KFTVLDRE,Map duty cycle replacement value for boost control in open loop mode,map,0x1CBDE2,8,4,8,unsigned,0.390625,%TV,volvo:high,same,0x1CBDD6,0x1CBDDE
+KFFUPSRLK,fupsrl correction with high loads,map,0x1CBE6E,12,12,16,unsigned,3.0517578125e-05,-,volvo:high,same,0x1CBE3E,0x1CBE56
+KFPIRGRES,Partial pressure of residual gas in combustion chamber,map,0x1CBFBC,7,14,16,unsigned,0.0390625,hPa,volvo:high,changed,,
+KFPRGA,int. partial exhaust gas press. dependent on cam.adjustment by outlet cam. contr,map,0x1CC0B4,10,14,16,unsigned,0.0390625,hPa,volvo:high,changed,0x1CC084,0x1CC098
+KFPRGE,int. partial exhaust gas press. dependent on cam.adjustment by inlet cam. contro,map,0x1CC200,10,14,16,unsigned,0.0390625,hPa,volvo:high,changed,0x1CC1D0,0x1CC1E4
+KFUPSRLKNW,fupsrl correction with high loads in case of shifted camshaft,map,0x1CC34C,12,12,16,unsigned,3.0517578125e-05,-,volvo:high,same,0x1CC31C,0x1CC334
+KFURLA,conversion factor from ps->rl dependent on cam.adjustment by outlet camshaft,map,0x1CC4A0,10,14,16,unsigned,4.57763671875e-06,%/hPa,volvo:high,changed,0x1CC470,0x1CC484
+KFURLE,conversion factor from ps->rl dependent on cam.adjustment by inlet camshaft,map,0x1CC5EC,10,14,16,unsigned,4.57763671875e-06,%/hPa,volvo:high,changed,0x1CC5BC,0x1CC5D0
+KLPRGAGPS,CL for corr. of pbrintro_w dependent on pressure rate manifold/exhaust valve,curve,0x1CC718,8,1,16,unsigned,3.0517578125e-05,-,volvo:high,changed,0x1CC708,
+PLFMS,pressure difference at air filter,curve,0x1CC73E,8,1,16,unsigned,0.078125,hPa,volvo:high,same,0x1CC72E,
+RLNOT,limp-home relative air charge rl in case of E_DK and E_LM,curve,0x1CC763,6,1,16,unsigned,0.0234375,%,ford:high,,0x1CC75D,
+EVTMODO,offset for evtmod depending on filtered engine temperature,curve,0x1CC77E,12,1,8,unsigned,0.75,Grad C,volvo:high,same,0x1CC772,
+FDVANS,Temperature factor for air at throttle valve,curve,0x1CC793,8,1,8,unsigned,0.0078125,-,volvo:high,same,0x1CC78B,
+FWFTBRTA,Weighting for ftbr as a function of tans,curve,0x1CC7AA,14,1,8,unsigned,0.0078125,-,volvo:high,changed,0x1CC79C,
+FWLKFTBR,warm up correction for combustion chamber model,curve,0x1CC7C1,8,1,8,unsigned,0.0078125,-,volvo:high,same,0x1CC7B9,
+KFFWTBR,Weighting factor for combustion chamber temperature model,map,0x1CC7DD,10,8,8,unsigned,0.0078125,-,volvo:high,same,0x1CC7CB,0x1CC7D5
+DEVTMAGR,offset for evtmod depending on tsges_w at high tans caused by EGR,curve,0x1CC840,8,1,16,unsigned,0.75,Grad C,volvo:high,same,0x1CC830,
+KFDFBTMN,Dynamic factor for combustion chamber temperature model negative gradient,map,0x1CC866,6,8,8,unsigned,0.0078125,-,volvo:high,same,,0x1CC85E
+KFDFBTMP,Dynamic factor for combustion chamber temperatur model positive gradient,map,0x1CC8AC,6,8,8,unsigned,0.0078125,-,volvo:high,same,,0x1CC8A4
+KLFAKTABGM,weigth factor for tabgm (exhaust temp) for calculate stationary combustion cham,curve,0x1CC8EA,6,1,16,unsigned,3.0517578125e-05,-,volvo:high,same,0x1CC8DE,
+ZDBTMN,time constant combustion chamber temperature model for negative gradient,curve,0x1CC90A,8,1,16,unsigned,1.0,s,volvo:high,same,0x1CC8FA,
+ZDBTMP,time constant combustion chamber temperature model for positive gradient,curve,0x1CC92C,8,1,16,unsigned,1.0,s,volvo:high,same,0x1CC91C,
+KLDWPR,Delta prediction angle without post injection/ti-reduction,curve,0x1CC946,4,1,16,signed,6.0,Grad KW,ford:sig,,,
+KLDWPRNSP,Delta prediction angle at post injection release,curve,0x1CC958,4,1,16,signed,6.0,Grad KW,ford:sig,,,
+FWMLHFMMN,Weighting factor for min. HFM air-mass threshold as a  function of the altitude,curve,0x1CC992,2,1,16,unsigned,1.52587890625e-05,-,ford:sig,,0x1CC98E,
+KFMLDMN,air mass flow threshold for min. failure,map,0x1CC9BA,8,9,16,signed,0.1,kg/h,ford:sig,,0x1CC998,
+PVDPUMXN,upper limit for compression ratio,curve,0x1CCA86,4,1,16,unsigned,0.0625,-,volvo:sig,changed,0x1CCA7E,
+KFFTSRRX,map for reducing maximum filling depending on tsr and nmot,map,0x1CCB76,6,6,8,unsigned,0.0078125,-,volvo:sig,same,0x1CCB6A,0x1CCB70
+FRLMXRED,factor for reducing maximum filling,curve,0x1CCBB1,8,1,8,unsigned,0.0078125,-,volvo:sig,same,0x1CCBA9,
+FETAZWLD,limit for ignition efficiency,curve,0x1CCBCE,8,1,16,unsigned,0.0078125,-,volvo:sig,same,0x1CCBBE,
+FPSXFETA,WOT depending on engine speed,curve,0x1CCBE8,8,1,16,signed,0.00390625,-,volvo:sig,changed,0x1CCBD8,
+KFWDKSMX,max. desired throttle angle,map,0x1CCC16,10,3,16,unsigned,0.00152587890625,%,volvo:high,same,0x1CCBFC,0x1CCC10
+FPLMRM,weighting factor for P component of air-mass controller,curve,0x1CCC5A,6,1,8,unsigned,0.00390625,-,volvo:high,same,0x1CCC54,
+KLWDKTAN,weight of throttle position at start up with intake air temperatur,curve,0x1CCC67,4,1,8,unsigned,0.03125,-,volvo:high,same,0x1CCC63,
+NWDKSST,threshold for deactivation desired throttle position without torque structur,curve,0x1CCC72,6,1,8,unsigned,40.0,1/min,volvo:high,changed,0x1CCC6C,
+KFWDKTHO,"desired throttle position at start-up - f (hight, engine start temperatur)",map,0x1CCC8E,12,4,8,signed,0.0015259021896696422,%DK,volvo:high,same,0x1CCC7A,
+KLWDKABST,Weighting desired throttle position at start-up,curve,0x1CCCF8,4,1,16,unsigned,3.0517578125e-05,-,volvo:high,same,0x1CCCF0,
+TWDKSNST,time constant for filtering of reference throttle blade position,curve,0x1CCD09,6,1,16,unsigned,0.01,s,ford:high,,0x1CCD03,
+WDKSNLN,desired throttle angle at kl15 off,curve,0x1CCD1F,8,1,8,unsigned,0.39215686274509803,%DK,volvo:high,changed,0x1CCD17,
+KLTNWADSTE,Characteristic delay time after end of start to enable diagnosis outlet camshaft,curve,0x1CCD2F,6,1,16,unsigned,0.01,s,ford:sig,,0x1CCD29,
+KLTNWEDSTE,Characteristic delay time after end of start to enable diagnosis inlet camshaft,curve,0x1CCD43,6,1,16,unsigned,0.01,s,ford:high,,0x1CCD3D,
+KLNDNWEMN,Characteristic line minimum engine speed for diagnosis inlet camshaft control,curve,0x1CCD44,6,1,8,signed,40.0,1/min,volvo:high,same,0x1CCD3D,
+KLNDNWAMN,Characteristic line minimum engine speed for diagnosis outlet camshaft control,curve,0x1CCD57,6,1,8,unsigned,40.0,1/min,volvo:high,same,0x1CCD51,
+KLNDNWEMN,Characteristic line minimum engine speed for diagnosis inlet camshaft control,curve,0x1CCD64,6,1,8,unsigned,40.0,1/min,volvo:high,same,0x1CCD5E,
+NNWTMNA or NNWTMNE,AMBIGUOUS NAME (pack lists several names at this address). min threshold of engine speed to enable exhaust camshaft control,curve,0x1CCD9A,4,1,16,unsigned,40.0,1/min,volvo:sig,same,0x1CCD92,
+NNWTMNE,min threshold of engine speed to enable inlet camshaft control,curve,0x1CCDA8,4,1,16,unsigned,40.0,1/min,volvo:sig,same,0x1CCDA0,
+TVNWSTNMTM,delaytime to enable camshaft control if enginespeed > desired engine speed,curve,0x1CCDC0,4,1,16,unsigned,0.05,s,ford:high,,0x1CCDB8,
+TVNWSTTM,"delay time : enable of camshaft control after start, depending on engine temp",curve,0x1CCDCD,4,1,16,unsigned,0.01,s,ford:high,,0x1CCDC9,
+KFNWADA,Determ. of the adaption range f. flank adapt. exhaust phase sensor,map,0x1CCDE1,4,4,8,unsigned,1.0,,ford:high,,0x1CCDD9,0x1CCDDD
+KFNWADE,Determ. of the adaption range f. flank adapt. intake phase sensor,map,0x1CCDFB,4,4,8,unsigned,1.0,,ford:high,,0x1CCDF3,0x1CCDF7
+KFNWADGA,Determ. of the adaption range f. first edge adapt. exhaust phase sensor,map,0x1CCE15,4,4,8,unsigned,1.0,,ford:high,,0x1CCE0D,0x1CCE11
+KFNWADGE,Determ. of the adaption range f. first edge adapt. intake phase sensor,map,0x1CCE2F,4,4,8,unsigned,1.0,,ford:high,,0x1CCE27,0x1CCE2B
+KFDWNWDMXA,Maximum deviation in camshaft position for error entry outlet,map,0x1CCEA0,6,5,16,unsigned,0.0078125,Grad KW,volvo:high,same,0x1CCE8A,0x1CCE96
+KFTDDNWNPA,Debouncing time for setting the error non-plausible position of outlet camshaft,map,0x1CCEF2,4,5,16,unsigned,0.05,s,volvo:high,same,0x1CCEE0,0x1CCEE8
+KFDWNWDMXE,Maximum deviation in camshaft position for error entry intake,map,0x1CCF52,6,5,16,unsigned,0.0078125,Grad KW,ford:high,,0x1CCF3C,0x1CCF48
+KFTDDNWNPE,Debouncing time for setting the error non-plausible position of intake camshaft,map,0x1CCFA4,4,5,16,unsigned,0.05,s,volvo:high,same,0x1CCF92,0x1CCF9A
+DWNWESTPA,Angular deviation of intake camshaft for adjustment stop outlet camshaft,map,0x1CCFD6,5,6,16,unsigned,0.0078125,Grad KW,volvo:high,same,0x1CDEEE,0x1CDF88
+KFNWTMA,factor for transition cold to warm maps at desired outtlet valve angle,map,0x1CD03B,4,4,8,unsigned,0.0078125,-,volvo:high,same,0x1CD033,0x1CD037
+NWTMKHA,factor desired exhaust cam angle catalyst heating during transition cold -> warm,curve,0x1CD052,6,1,8,unsigned,0.0078125,-,volvo:high,changed,0x1CD04C,
+FNWSKRA,factor for correction of desired cam angle due to noise of outlet valve,curve,0x1CD072,3,1,8,unsigned,0.0078125,-,volvo:high,same,,
+KFNWKHA,Map f. camshaft spread at catalyst heating (exhaust),map,0x1CD076,16,8,16,signed,0.0078125,Grad KW,volvo:high,changed,0x1CDF08,0x1CDF64
+KFNWKHKA,Map f. camshaft spread at catalyst heating cold engine (exhaust),map,0x1CD176,16,8,16,signed,0.0078125,Grad KW,volvo:high,changed,0x1CDF08,0x1CDF64
+KFNWKHLLA,Map f. camshaft spread at catalyst heating and B_II (exhaust),map,0x1CD276,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDED6,0x1CDF4C
+KFNWKHLLKA,Map f. camshaft spread at catalyst heating and B_II cold engine (exhaust),map,0x1CD2A8,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDED6,0x1CDF4C
+KFNWKRA,desired cam angle for detonation outlet,map,0x1CD2DA,16,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDF08,0x1CDF64
+KFNWLLA,Map f. camshaft spread during idling (exhaust),map,0x1CD3DA,5,5,16,signed,0.0078125,Grad KW,volvo:high,changed,0x1CDED6,0x1CDF4C
+KFNWSA,Map f. camshaft spread (exhaust),map,0x1CD40C,16,8,16,signed,0.0078125,Grad KW,volvo:high | code 2026-11-18 (-> wnwshwa_w); log pending,same,0x1CDF08,0x1CDF64
+KFNWWLA,Map f. camshaft spread during warm-up (exhaust),map,0x1CD50C,16,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDF08,0x1CDF64
+KFNWWLLA,Map f. camshaft spread during warm-up at B_II (exhaust),map,0x1CD60C,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDED6,0x1CDF4C
+KFWNWSAPA,Map f. camshaft spread during exhaust application phase,map,0x1CD66A,12,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CD642,0x1CD65A
+TNWSBGNSTA,Time: sw.over des.val.change limit. after start end exh. cam.,curve,0x1CD736,4,1,16,unsigned,0.01,s,ford:high,,0x1CD72E,
+WNWDSHKA,offset desired outlet angle cam correction catalyst heating via altitude,curve,0x1CD748,4,1,16,signed,0.0078125,Grad KW,ford:high,,0x1CD740,
+WNWSTA,desired angle  of outlet camshaft control during start,curve,0x1CD767,4,1,16,signed,0.0078125,Grad KW,ford:sig,,0x1CD75F,
+WNWSWOFA,desired angle  of outlet camshaft control at S_KL15 = off,curve,0x1CD779,4,1,16,signed,0.0078125,Grad KW,ford:sig,,0x1CD771,
+KFNWTME,factor for transition cold to warm maps at desired intlet valve angle,map,0x1CD78E,4,4,8,unsigned,0.0078125,-,volvo:high,same,0x1CD786,0x1CD78A
+NWTMKHE,factor desired inlet cam angle catalyst heating during transition cold -> warm,curve,0x1CD7A5,6,1,8,unsigned,0.0078125,-,volvo:high,changed,0x1CD79F,
+FNWSKRE,factor for correction of desired cam angle due to noise of inlet valve,curve,0x1CD7C4,3,1,8,unsigned,0.0078125,-,volvo:high,same,,
+KFNWKHE,Map f. camshaft spread at catalyst heating (intake),map,0x1CD7C8,16,8,16,signed,0.0078125,Grad KW,volvo:high,changed,0x1CDF2A,0x1CDF76
+KFNWKHKE,Map f. camshaft spread at catalyst heating cold engine (intake),map,0x1CD8C8,16,8,16,signed,0.0078125,Grad KW,volvo:high,changed,0x1CDF2A,0x1CDF76
+KFNWKHLLE,Map f. camshaft spread at catalyst heating and B_II (intake),map,0x1CD9C8,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDEE2,0x1CDF58
+KFNWKHLLKE,Map f. camshaft spread at catalyst heating and B_II cold engine (intake),map,0x1CD9FA,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDEE2,0x1CDF58
+KFNWKRE,desired cam angle for detonation inlet,map,0x1CDA2C,16,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDF2A,0x1CDF76
+KFNWLLE,map for camshaft position in idle (intake),map,0x1CDB2C,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDEE2,0x1CDF58
+KFNWSE,"map : nominal angle of camshaft, general conditions (intake)",map,0x1CDB5E,16,8,16,signed,0.0078125,Grad KW,volvo:high | code 2026-11-18 (-> wnwshwe_w); log pending,same,0x1CDF2A,0x1CDF76
+KFNWWLE,map : nominal angle of camshaft at warm-up (intake),map,0x1CDC5E,16,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDF2A,0x1CDF76
+KFNWWLLE,Map f. camshaft spread during warm-up at B_II (intake),map,0x1CDD5E,5,5,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDEE2,0x1CDF58
+KFWNWSAPE,Map f. camshaft spread during intake application phase,map,0x1CDDBC,12,8,16,signed,0.0078125,Grad KW,volvo:high,same,0x1CDD94,0x1CDDAC
+TNWSBGNSTE,Time: sw.over des.val.change limit. after start end intake cam.,curve,0x1CDE88,4,1,16,unsigned,0.01,s,ford:high,,0x1CDE80,
+WNWDSHKE,offset desired inlet angle cam correction catalyst heating via altitude,curve,0x1CDE9A,4,1,16,signed,0.0078125,Grad KW,ford:high,,0x1CDE92,
+WNWSTE,desired angle  of inlet camshaft control during start,curve,0x1CDEB7,4,1,16,signed,0.0078125,Grad KW,ford:sig,,0x1CDEAF,
+WNWSWOFE,desired angle  of inlet camshaft control at S_KL15 = off,curve,0x1CDEC9,4,1,16,signed,0.0078125,Grad KW,ford:sig,,0x1CDEC1,
+ITANWLIA,init value for slow I-part of cam-controller exhaust,curve,0x1CDF96,6,1,16,signed,0.006103515625,%,ford:med,,,
+KFNWRDA,Characteristic map D portion of camshaft controller (outlet),map,0x1CDFA2,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,changed,,0x1CDF88
+KFNWRPA,Characteristic map D portion of camshaft controller (outlet),map,0x1CDFEA,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,same,,0x1CDF88
+KFNWRSIA,I-map for cam-controller outlet,map,0x1CE032,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,same,,0x1CDF88
+ITANWLIE,init value for slow I-part of cam-controller intake,curve,0x1CE07C,6,1,16,signed,0.006103515625,%,ford:med,,,
+KFNWRDE,Map: D-portion of intake camshaft controller,map,0x1CE088,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,changed,,0x1CDF88
+KFNWRPE,Map: P-portion of intake camshaft controller,map,0x1CE0D0,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,same,,0x1CDF88
+KFNWRSIE,I-map for cam-controller inlet,map,0x1CE118,6,6,16,unsigned,0.00152587890625,%/Grad KW,volvo:med,same,,0x1CDF88
+FSDZMSAB,Char. line rescaling factor for delta LSU time constant over exhaust mass flow,curve,0x1CF6F0,5,1,16,unsigned,0.01,s,ford:sig,,0x1CF6E6,
+ZATMRW,Time constant f. pipe wall temperature model,curve,0x1CF748,5,1,16,unsigned,1.0,s,ford:high,,0x1CF73E,
+KLIMLNA,Gradient constant for non-active debouncing,curve,0x1CF75A,5,1,16,unsigned,1.0,s,ford:sig,,,
+KLRTLSU,Caracteristic line: transfomation of internal resistor of nernst cell into temp.,curve,0x1CF865,22,1,16,unsigned,0.0234375,Grad C,ford:sig,,,
+KFDLASO,Char. map corr. of the lambda setpoint value for the cont. lambda controller,map,0x1CF8D5,10,10,8,signed,0.000244140625,-,ford:med,,0x1CF93A,0x1CF945
+KFFRMIN,lower limit of control range extended,map,0x1CF95D,5,4,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1CF954,
+KFLRSG1,Characteristic map control parameter g1 continuous lambda controller,map,0x1CF98A,7,8,16,signed,0.0009765625,-,ford:med,,,
+KFLRSG2,Characteristic map control parameter g2 continuous lambda controller,map,0x1CF9FA,7,8,16,unsigned,0.0009765625,1/s,ford:med,,,
+KFLRSG3,Characteristic map for controller parameter g3 of continuous lambda control,map,0x1CFA6A,7,8,16,unsigned,0.015625,1/s^2,ford:med,,,
+KFLRSG4,Characteristic map control parameter g4 continuous lambda controller,map,0x1CFADA,7,8,16,signed,6.103515625e-05,s,ford:med,,,
+KFLRSP1,Characteristic map control parameter p1 continuous lambda controller,map,0x1CFB4A,7,8,16,unsigned,0.001953125,-,ford:med,,,
+KFLRSP2,Characteristic map control parameter p2 continuous lambda controller,map,0x1CFBBA,7,8,16,unsigned,0.001953125,-,ford:med,,,
+KFLRSP3,Characteristic map control parameter p3 continuous lambda controller,map,0x1CFC2A,7,8,16,unsigned,0.001953125,-,ford:med,,,
+KFLRSP4,Characteristic map control parameter p4 continuous lambda controller,map,0x1CFC9A,7,8,16,signed,0.001953125,-,ford:med,,,
+TLRTMS,"lock time for CL lambda control after start, depending on engine start temperatu",curve,0x1CFD14,5,1,16,unsigned,0.1,s,ford:high,,0x1CFD0F,
+KLAO2VK,characteristic line to adapt O2 concentration (20.95%) bank 1,curve,0x1CFDBA,10,1,16,signed,0.0009765625,% O2,ford:sig,,,
+KFRLATR,minimum load for exhaust temperature control,map,0x1CFE19,5,5,8,unsigned,0.75,%,ford:high,,0x1CFE0F,0x1CFE14
+DLATRNLN,desired delta lambda of exhaust temperature control substitution,curve,0x1CFE3E,5,1,8,signed,0.0078125,-,ford:high,,0x1CFE39,
+BTRKHTMS,Characteristic enabling flag B_trkh,curve,0x1CFE4F,8,1,8,unsigned,0.00390625,-,ford:high,,0x1CFE47,
+FTMLAKH,tmot-correction of lambda-weighting at catalyst heating,curve,0x1CFE63,4,1,8,unsigned,0.00390625,-,ford:high,,0x1CFE5F,
+KFNSKHFS,Map for control up engine during catalyser heating in drive position,map,0x1CFE72,5,4,8,unsigned,0.0078125,-,ford:high,,0x1CFE69,0x1CFE6E
+KFNSKHLL,map for control up engine during catalyst heating,map,0x1CFE91,5,4,8,unsigned,0.0078125,-,ford:high,,0x1CFE88,0x1CFE8D
+ABKKATTAB,,curve,0x1CFEBA,6,1,8,unsigned,0.00390625,-,ford:sig,,,
+FKHLA,Weighting factor  Lambda nominal for catalyzer heating,curve,0x1CFEDA,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1CFECA,
+FKHMD,Weighting factor torque reserve for catalyzer heating,curve,0x1CFEFC,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1CFEEC,
+FKHMDLL,Weighting factor torque reserve for catalyzer heating during idle speed,curve,0x1CFF1E,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1CFF0E,
+IMLKHMXTMS,Max. ration factor for switch-off catalyst heating,curve,0x1CFF37,4,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1CFF33,
+KFNFSKHM,idle speed while catalyst heating with automatic gear box in drive-position,map,0x1CFF50,8,4,8,unsigned,10.0,1/min,ford:sig,,0x1CFF44,
+KFNLLKHM,Nominal idling speed during catalyzer heating,map,0x1CFF82,8,4,8,unsigned,10.0,1/min,ford:sig,,0x1CFF76,
+KFWNWWKA,Weighting performance characteristica for NW nominal angle outlet,map,0x1CFFBA,8,8,8,unsigned,0.0078125,-,ford:sig,,,
+KFWNWWKE,Weighting performance characteristica for NW nominal angle inlet,map,0x1D0014,8,8,8,unsigned,0.0078125,-,ford:sig,,,
+MLSUS,reference of air mass flow integral,curve,0x1D0067,12,1,16,unsigned,0.00035555555555555557,kg,ford:high,,0x1D005B,
+NWKHFHO,controlled increase factor for camshaft position in dependence of altitude,curve,0x1D0087,4,1,8,unsigned,0.0078125,-,ford:high,,0x1D0083,
+FMDKHTMST,tmst-correction of torque reserve for catalyst heating,curve,0x1D00B6,8,1,8,unsigned,0.0078125,-,ford:high,,0x1D00AE,
+FMDKHFH,altitude correction of torque reserve for catalyst heating,curve,0x1D00CA,4,1,16,unsigned,3.0517578125e-05,-,ford:high,,0x1D00C2,
+KFKWTMP,"Characteristic torque reserve for keeping catalyst warm, temporary",map,0x1D00E6,4,4,16,unsigned,0.00152587890625,%,ford:high,,0x1D00D6,0x1D00DE
+KFMDDSLAD,Map torque reserve at tester demand of active SAI-diagnosis,map,0x1D011A,4,4,16,unsigned,0.00152587890625,%,ford:high,,0x1D010A,0x1D0112
+KFMDDSLFA,Map torque reserve at tester demand of SAI-diagnosis short test,map,0x1D014E,4,4,16,unsigned,0.00152587890625,%,ford:high,,0x1D013E,0x1D0146
+KFMDKH,Characteristic torque reserve for catalyst heating,map,0x1D0192,8,8,16,unsigned,0.00152587890625,%,ford:high,,0x1D0172,0x1D0182
+KFMDKHLL,Characteristic torque reserve for catalyst heating at idling,map,0x1D0236,8,8,16,unsigned,0.00152587890625,%,ford:high,,0x1D0216,0x1D0226
+KFLANSKH,map lambda engine request at catalyst heating during afterstart,map,0x1D02D6,6,12,16,unsigned,0.000244140625,-,ford:sig,,0x1D02C4,
+KFLMSKHKST,map for lambda engine nominal at catalyst heating with tmst less than TMSTLMS,map,0x1D0396,8,8,16,unsigned,0.000244140625,-,ford:sig,,0x1D0376,0x1D0386
+KFLMSKHMAG,characteristics lambda engine nominal at catalyst heating (lean concept),map,0x1D043A,8,8,16,unsigned,0.000244140625,-,ford:sig,,0x1D041A,0x1D042A
+KFFDLBTS,"Factor delta nominal Lambda for component protection (confirmed by a second, Volvo-native map pack)",map,0x1D04CD,12,16,8,unsigned,0.0078125,-,ford:high,,0x1D06B6,0x1D064E
+KFLBTS,"Nominal Lambda for component protection (confirmed by a second, Volvo-native map pack)",map,0x1D058D,12,16,8,unsigned,0.0078125,-,ford:high,,0x1D06B6,0x1D064E
+KFDLBTS,Delta nominal Lambda for component protection,map,0x1D0693,8,4,8,signed,0.0078125,-,ford:sig,,0x1D0687,0x1D068F
+ATMTAKR,Correction of exhaust manifold temperature,curve,0x1D07D9,6,1,16,signed,0.01953125,Grad C,ford:sig,,,
+KLATMTMOT,caracterisic line for engine temperature correction,curve,0x1D0994,5,1,16,signed,0.01953125,Grad C,ford:sig,,,
+FATMAHX,Factor loss of heat at wall in front upto hexagon,curve,0x1D09ED,8,1,16,unsigned,1.52587890625e-05,-,ford:sig,,,
+FATMVHX,Loss of heat of tube upto hexagon to the environment by airstream,curve,0x1D0A0E,7,1,16,unsigned,0.001736111111111111,J/sK,ford:sig,,,
+KDCOXRHK,Characteristic map oxygen storage correction main catalyst,map,0x1D0A7C,7,7,16,signed,0.000244140625,-,ford:sig,,0x1D0A60,0x1D0A6E
+KFOSCHN,Characteristic map OSC of a new main catalyst,map,0x1D0B02,8,8,16,unsigned,0.1,mg,ford:sig,,0x1D0AE2,0x1D0AF2
+KSDCMS,Characteristic line mass flow dependent scaling factor oxygen storage correction,curve,0x1D0B8C,4,1,8,unsigned,0.0078125,-,ford:sig,,0x1D0B84,
+KSDCOSC,Characteristic line OSC dependent scaling factor oxygen storage correction,curve,0x1D0B9C,5,1,8,unsigned,0.0078125,-,ford:sig,,0x1D0B92,
+FPVHKTTA,Characteristic line temperature-dep. factor in pressure gradient main cat,curve,0x1D0C53,6,1,8,unsigned,20.0,hPa*hPa*h/kg,ford:sig,,,
+LRSGKTM,Correcting char. line of the control parameters at low engine temperatures,curve,0x1D0D93,6,1,8,unsigned,0.0078125,-,ford:sig,,0x1D0D8D,
+FRINH1,Multiplication factor for RIN nominal value downstream of the catalyzer,curve,0x1D0DCD,5,1,8,unsigned,0.25,-,ford:sig,,,
+KFRINH,MAP for Nernst resistor post cat,map,0x1D0DE4,5,3,8,unsigned,8.0,Ohm,ford:sig,,,
+ZKARIH1,Filter time const. sim. dyn. ceramic temp.  downstr. cat.,curve,0x1D0E11,5,1,16,unsigned,1.0,s,ford:sig,,,
+KLTZKTD,periode time for lambda controller from catalyst monitoring,curve,0x1D0E74,5,1,16,unsigned,0.01,s,ford:sig,,,
+KLAZKTD,forced lambda amplitude from catalyst monitoring,curve,0x1D0E9C,5,1,8,unsigned,0.0009765625,-,ford:sig,,,
+KLKABT,"Line for correction of calculated amplitude, dependent on cat. temperature",curve,0x1D0EAE,5,1,8,unsigned,0.0078125,-,ford:sig,,,
+KFHSHUSOL,Mapp. for heater voltage as a funct. of exhaust emis. temp. and msabg,map,0x1D0FD4,6,8,16,unsigned,0.000390625,V,ford:sig,,,
+KFUSHK,lambda sensor reference value for lambda control downstream of catalys,map,0x1D10AE,6,6,8,unsigned,0.005215686274509804,V,ford:high,,0x1D10A2,0x1D10A8
+ZLASOHML,time constant for PT1-filter of the pseude lambda behind catalyst,curve,0x1D10DB,8,1,16,unsigned,1.0,s,ford:sig,,,
+PLRHAV,Weighting factor of P-part LRHK depending on catalyst age,curve,0x1D10FD,8,1,8,unsigned,0.00390625,-,ford:high,,0x1D10F5,
+LAKAMSAIML,lambda setpoint for cat deox. (dependent exhast gas mass and rich-integral),map,0x1D1168,5,5,16,unsigned,0.000244140625,-,ford:sig,,,
+ILMLKAXTK,"Threshold of richness area of O2 purging after fuel cat off, funct. of cat-temp",curve,0x1D11AC,5,1,16,unsigned,0.0044444444444444444,g,ford:sig,,,
+KLDRIPAB or KLDRIPNH,AMBIGUOUS NAME (pack lists several names at this address). Value to abort the test due to high evaporation or high fuel level,curve,0x1D130F,8,1,16,signed,6.103515625e-05,-,ford:sig,,,
+FIPTEL,factor delta pump current for rough leak detection for end of line test,curve,0x1D1397,8,1,16,unsigned,1.52587890625e-05,-,ford:sig,,,
+TDMCFGTF,time for check gas cap detection,curve,0x1D1404,5,1,16,unsigned,0.1,s,ford:sig,,,
+TDMGLGTF,Time for rough leak detection,curve,0x1D141A,5,1,16,unsigned,0.1,s,ford:sig,,,
+KFSDLUSDMR,Map offset desired value standard deviation engine roughness,map,0x1D1534,6,4,8,unsigned,0.03637978807091713,(Umdr./sec)^2,ford:sig,,0x1D152A,
+KFSDLUSOL,Map desired value standard deviation engine roughness,map,0x1D1564,6,12,8,unsigned,0.03637978807091713,(Umdr./sec)^2,ford:sig,,0x1D1552,
+KFFNSAMX,Map maximal value afterstart adaptation,map,0x1D15C5,6,3,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1D15BC,
+FNSSM,after start increase,curve,0x1D15F0,12,1,8,unsigned,0.015625,-,ford:sig,,0x1C8D3C,
+FNSSMWNW,factor afterstart enrichment (inlet camshaft adjustment part),curve,0x1D15FC,12,1,8,unsigned,0.0078125,-,ford:sig,,0x1C8D3C,
+FZANSSA1,factor for ign. sync. decreasing of afterstart enrichment at hot start range 1,curve,0x1D1608,6,1,8,unsigned,0.0009765625,-,ford:sig,,0x1D413D,
+FZANSSA2,factor for ign. sync. decreasing of afterstart enrichment at hot start range 2,curve,0x1D160E,6,1,8,unsigned,0.0009765625,-,ford:sig,,0x1D413D,
+FZANSSM1,factor for ign. sync. decreasing of afterstart enrichment above SZANSSM,curve,0x1D1614,12,1,8,unsigned,0.0009765625,-,ford:sig,,0x1C8D3C,
+FZANSSM2,factor for ign. sync. decreasing of afterstart enrichment below SZANSSM,curve,0x1D1620,12,1,8,unsigned,0.0009765625,-,ford:sig,,0x1C8D3C,
+FZANSSM3,factor for ign. sync. decreasing of afterstart enrichment in range 3,curve,0x1D162C,12,1,8,unsigned,0.0009765625,-,ford:sig,,0x1C8D3C,
+FZANSSMNW,factor f. ign. sync. decreasing of afterstart enrichment (camshaft part),curve,0x1D1638,12,1,8,unsigned,0.0009765625,-,ford:sig,,0x1C8D3C,
+KFFWL,map warm-up factor,map,0x1D1644,12,12,8,unsigned,0.0078125,-,ford:high,,0x1D417B,0x1C8D3C
+KFFWLW,map weighting warm-up factor,map,0x1D16D4,6,6,8,unsigned,0.0078125,-,ford:high,,0x1D40FE,0x1C8D08
+KFNSA,after start increase,map,0x1D1703,6,3,8,unsigned,0.0078125,-,ford:high,,0x1D16FA,0x1D1700
+KFNSTMSTHO,map correction of afterstart-factor dependent on pressure and temperature,map,0x1D1721,6,4,8,unsigned,0.0078125,-,ford:high,,0x1D1717,0x1D171D
+SZANSSM1,switching level 1 of afterstart enrichment,curve,0x1D1739,12,1,8,unsigned,0.00390625,-,ford:sig,,0x1C8D3C,
+SZANSSM2,switching level 2 of afterstart enrichment,curve,0x1D1745,12,1,8,unsigned,0.00390625,-,ford:sig,,0x1C8D3C,
+KFWWNS,repeated start time factor,map,0x1D1764,8,8,8,unsigned,0.0078125,-,ford:sig,,0x1D1754,
+KFSTHO,weighting of engine start-factor depending of altitude,map,0x1D17B8,6,4,8,unsigned,0.0078125,-,ford:high,,0x1D17AE,0x1D17B4
+FUKNSTHO,altitude dependent transient control post cranking factor,curve,0x1D17E1,6,1,8,unsigned,0.0078125,-,ford:high,,0x1D17DB,
+FUKNSTM,initial value of transient control post-start factor,curve,0x1D17F1,9,1,8,unsigned,0.015625,-,ford:high,,0x1D17E8,
+KFABAK,share factor wall wetting for acceleration enrichment,map,0x1D17FA,9,7,8,unsigned,0.00390625,-,ford:high,,0x1D4166,0x1D4105
+KFAVAK,share factor wall wetting for deceleration enleanment,map,0x1D1839,9,7,8,unsigned,0.00390625,-,ford:high,,0x1D4166,0x1D4105
+KFBAKL,factor accel. enrichment (short- and long-time part),map,0x1D1878,9,7,8,unsigned,0.0625,-,ford:high,,0x1D4166,0x1D4105
+KFBALB,factor accel. enrichment charge area,map,0x1D18C5,6,6,8,unsigned,0.015625,-,ford:high,,0x1D18B9,0x1D18BF
+KFVAKL,factor decel. enleanment (short- and long-time part),map,0x1D18E9,9,7,8,unsigned,0.0625,-,ford:high,,0x1D4166,0x1D4105
+KFVALDIF,Weighting factor delay lean-off f. Labdaist > 1.0,map,0x1D1928,9,5,8,unsigned,0.00390625,-,ford:high,,0x1D4166,0x1C8D58
+KFZVAKM,"Map f. reduction factor K-memory (tmot, nmot) for decel. enleanment",map,0x1D1955,9,7,8,unsigned,0.00390625,-,ford:high,,0x1D4166,0x1D4105
+KLFVANST,characteristic linefor the weighting factor of deceleration during post-cranking,curve,0x1D199E,9,1,8,unsigned,0.0078125,-,ford:high,,0x1D1995,
+ZBAKM,reduction factor K-memory (tmot) for decel. enleanment,curve,0x1D19AB,9,1,8,unsigned,0.00390625,-,ford:sig,,0x1D4166,
+ZBALM,reduction factor L-memory (tmot) for accel. enrichment,curve,0x1D19B4,9,1,8,unsigned,0.00048828125,-,ford:sig,,0x1D4166,
+ZVALM,reduction factor L-memory (tmot) for decel. enleanment,curve,0x1D19BD,9,1,8,unsigned,0.00048828125,-,ford:sig,,0x1D4166,
+RKBAUM,rk-threshold for acceleration enrichment display,curve,0x1D19C6,9,1,16,signed,0.046875,%,ford:sig,,0x1D4166,
+RKVAUM,rk-threshold for deceleration enleanment display,curve,0x1D19D8,9,1,16,signed,0.046875,%,ford:sig,,0x1D4166,
+ZUKNSTM,time constant of transient control post cranking factor dependent on tmot,curve,0x1D19F4,9,1,16,unsigned,1.0,s,ford:high,,0x1D19EB,
+FLAMSBATM,factor desired lambda at acceleration enrichment,curve,0x1D1A06,9,1,16,unsigned,0.000244140625,-,ford:sig,,0x1D4166,
+FLAMSVATM,factor desired lambda at deceleration lean,curve,0x1D1A18,9,1,16,unsigned,0.000244140625,-,ford:sig,,0x1D4166,
+UKAFRTMO,upper limit of factor lambda-controller (fr) for enable UK-adaptation,curve,0x1D1A2A,9,1,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1D4166,
+UKAFRTMU,lower limit of factor lambda-controller (fr) for enable UK-adaptation,curve,0x1D1A3C,9,1,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1D4166,
+FWEHT,"Factor: restart quantity, temperature-dependent (hard restart)",curve,0x1D1A58,9,1,8,unsigned,0.0078125,-,ford:high,,0x1D1A4F,
+FWET,factor temperature restart fuel mass,curve,0x1D1A6B,9,1,8,unsigned,0.0078125,-,ford:high,,0x1D1A62,
+RLLAMMN,RL-min threshold for mixture enrichment because of combustibility,curve,0x1D1B08,6,1,8,unsigned,0.75,%,volvo:sig,same,0x1D1B02,
+DLAMTANS,Mixture enrichment according to air temperature,curve,0x1D1B26,4,1,8,unsigned,0.0078125,-,volvo:sig,same,0x1D1B22,
+LAMFA,Lambda driver demand,map,0x1D1B48,15,6,8,unsigned,0.0078125,-,volvo:sig,same,,
+LAMFLGSL,lambda enriched engine-running limit for secondary-air injection,curve,0x1D1BAB,6,1,8,unsigned,0.0078125,-,ford:sig,,0x1D1BA5,
+KFFZN0,Cylinder individual factor at neutral camshaft position for cylinder 0 - 7,map,0x1D1C9A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZN1,,map,0x1D1D1A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZN2,,map,0x1D1D9A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZN3,,map,0x1D1E1A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZN4,,map,0x1D1E9A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZN5,,map,0x1D1F1A,16,8,8,unsigned,0.00195313,-,ford:sig,,0x1D249B,0x1D24AC
+KFFZN6,,map,0x1D1F9A,16,8,8,unsigned,0.00195313,-,ford:sig,,0x1D249B,0x1D24AC
+KFFZN7,Cylinder individual factor at neutral camshaft position for cylinder  7,map,0x1D201A,16,8,8,unsigned,0.00195313,-,ford:sig,,0x1D249B,0x1D24AC
+KFFZNWN0,Cylinder individual factor at active camshaft position for cyl. 0,map,0x1D209A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZNWN1,,map,0x1D211A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZNWN2,,map,0x1D219A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZNWN3,,map,0x1D221A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFFZNWN4,,map,0x1D229A,16,8,8,unsigned,0.00195313,-,ford:high,,0x1D249B,0x1D24AC
+KFWEETM,Injection angle correction depending on engine temperature,map,0x1D24D8,8,6,8,signed,6.0,Grad KW,ford:sig,,0x1D24CA,0x1D24D2
+MRFAVW,threshold to switch end of injection angle at max. driver request,curve,0x1D2508,8,1,16,unsigned,0.0030517578125,%,ford:sig,,0x1C6C0A,
+ZZWEETM,Switchover threshold pattern angle,curve,0x1D2521,8,1,16,unsigned,1.0,,ford:high,,0x1D2519,
+KLFUDENS,temperature dependent fuel density correction,curve,0x1D253E,3,1,8,unsigned,0.0046875,,ford:high | code 2026-11-18 (frkate_w),,0x1D253B,
+FKKVS,Factor to correct fuel delivery system,map,0x1D2586,16,16,16,unsigned,3.0517578125e-05,-,ford:high | CONFIRMED code+log 2026-11-18 (ftek_w),,0x1D2546,0x1D2566
+FRLFSDP,,curve,0x1D279E,11,1,16,unsigned,3.0517578125e-05,,volvo:solid,changed,,
+TVKTSPEV,"delay time correction, dependant on temperature of injection valve",curve,0x1D27C4,4,1,16,unsigned,0.001,ms,"ford:high | ford:high, values plausible",,0x1D27BC,
+TVUBAT,"Delay time of injection valves, dependant on battery voltage",curve,0x1D27D2,5,1,16,unsigned,0.001,ms,"ford:high | code 2026-11-18 (tvub_w), values plausible",,0x1D27CD,
+KLPRDKVSFH,"Curve for Physical ranking value for factor mixture adaptation, value to high",curve,0x1D27E6,4,1,8,unsigned,1.0,,ford:sig,,,
+KLPRDKVSFL,"Curve for Physical ranking value for factor mixture adaptation, value to low",curve,0x1D27F4,4,1,8,unsigned,1.0,,ford:sig,,,
+KLPRDKVSOH,"Curve for Physical ranking value for offset mixture adaptation, value to high",curve,0x1D2801,4,1,16,unsigned,1.0,,ford:sig,,,
+FTVTEVTANS,Factor delay time correction by temperature of the sucked in air,curve,0x1D28ED,4,1,8,unsigned,0.0078125,-,ford:sig,,0x1D28E9,
+KFTEVP,Characteristic map for period time of the PCV,map,0x1D2901,5,9,8,unsigned,0.5,ms,ford:high,,0x1D28F3,0x1D28F8
+TATEMSN,"characteristic line of the PCV, duty-cycle depending on mass-flow",curve,0x1D2972,10,1,16,unsigned,0.00152587890625,%,ford:high,,0x1D295E,
+KFDPVL,delta pressure air filter for calculation purge mass flow in front of charger,map,0x1D299C,6,3,16,unsigned,0.0390625,hPa,ford:high,,0x1D298A,0x1D2996
+KLAFTE,characteristic of Saint-Venant of purge control valve an line AKF-TEV,curve,0x1D29DE,14,1,16,unsigned,3.0517578125e-05,-,ford:high,,0x1D29C2,
+MSNTATE,Characteristic standardized mass flow through TEV,curve,0x1D2A10,10,1,16,unsigned,0.000390625,kg/h,ford:high,,0x1D29FC,
+KFDETAZWK,Characteristic map for ignition efficiency correction during DTEV,map,0x1D2A4D,7,6,8,unsigned,0.5,%,ford:high,,0x1D2A40,0x1D2A47
+KFTVFRR,Map: Lambda controll after this time reset at reference value,map,0x1D2A80,4,3,8,unsigned,0.1,s,ford:high,,0x1D2A79,0x1D2A7D
+TADTEAH,characteristic line for duty cycle at DTEV at homogeneous mode,curve,0x1D2A9B,14,1,8,unsigned,0.390625,%,ford:high,,0x1D2A8D,
+ZWGRDDTE,gradient of ignition angle to correct the otimal ignition angle at DTEV,curve,0x1D2AB8,5,1,8,unsigned,0.1875,Grad KW/%,ford:high,,0x1D2AB3,
+KIRMSH,integration constant of CPV quality integrator in homogeneous mode,curve,0x1D2AD9,4,1,16,unsigned,0.03814697265625,%/(s*kg/h),ford:high,,0x1D2AD5,
+ZKIKAFDI,Characteristic line for time constant to filter ikakormt_w,curve,0x1D2AF6,5,1,16,unsigned,1.0,s,ford:high,,0x1D2AEC,
+FETATEBN,characteristic line: reduction of engine efficiency as f(nmot),curve,0x1D2B48,5,1,8,unsigned,0.00390625,-,ford:high,,0x1D2B43,
+KFETATE,characteristic map for efficency at active purging when te is near TEMIN,map,0x1D2B57,3,5,8,unsigned,0.5,%,ford:sig,,0x1D2B4F,0x1D2B52
+BPHUTEB,characteristic line for physically uegency für purge control,curve,0x1D2B83,4,1,8,unsigned,1.0,,ford:high,,0x1D2B7F,
+FBTEFKA,Factor correction of learning speed canister charge (depends on spec. fuel am.),curve,0x1D2B8F,5,1,8,unsigned,0.00390625,-,ford:high,,0x1D2B8A,
+FGWRKA,characteristic line: purge rate reduction with big frm-deviation,curve,0x1D2B9F,10,1,8,unsigned,0.0625,-,ford:high,,0x1D2B95,
+FKAPROG,progression for opening speed spec. purge fuel amount,curve,0x1D2BB0,5,1,8,unsigned,0.03125,-,ford:high,,0x1D2BAB,
+FKASTINX,characteristic line max. spec. fuel amount = F(integr. purge flow after TE-Stop),curve,0x1D2BBB,5,1,8,unsigned,0.001953125,-,ford:high,,0x1D2BB6,
+FKATEB,Characteristic line fuel portion depending on te / TEMIN,curve,0x1D2BC5,4,1,8,unsigned,0.00390625,-,ford:high,,0x1D2BC1,
+FVERMN,characteristic line: filter factor for purge flow in the manifold with fresh air,curve,0x1D2BD3,6,1,8,unsigned,0.00390625,-,ford:high,,0x1D2BCD,
+FVRMDYN,dynamic factor for purge flow in the manifold with fresh air,curve,0x1D2BD9,5,1,8,unsigned,0.03125,-,ford:sig,,0x1C6C29,
+KAHCTEMK,characteristic line adaptation speed of HC concentration deviation dkhc_w,curve,0x1D2BDE,5,1,8,unsigned,0.0390625,1/s,ford:sig,,0x1D40E8,
+KFFKASX,characteristic map max. spec. purge fuel amount,map,0x1D2BE3,5,4,8,unsigned,0.001953125,-,ford:high,,0x1D40E8,0x1D4138
+KFFTEVFX,characteristic map for max. percentage of purge valve opening,map,0x1D2C01,4,4,8,unsigned,0.00390625,-,ford:high,,0x1D2BF9,0x1D2BFD
+KFKASNH,characteristic map max. spec. purge fuel amount limp home homogeneous,map,0x1D2C11,4,4,8,unsigned,0.001953125,-,ford:high,,0x1C8CA3,0x1D41AC
+KFTEKAH,characteristic map of desired fuel portion purge control in homogeneous mode,map,0x1D2C21,4,4,8,unsigned,0.00390625,-,ford:high,,0x1C8CA3,0x1D41AC
+KTEVANMK,characteristic line for purge valve opening speed,curve,0x1D2C32,5,1,8,unsigned,4.768359375e-05,1/s,ford:sig,,0x1D40E8,
+DFTEVFLO,increasing speed purge valve flow factor,curve,0x1D2C46,5,1,16,unsigned,0.0625,-,ford:high,,0x1D2C3C,
+DMSTES,characteristic line maximum increase of purge mass flow,curve,0x1D2C5C,5,1,16,unsigned,0.4,kg/h,ford:high,,0x1D2C52,
+FBADMKA,weighting factor dependent from purge rate,curve,0x1D2C74,5,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D2C6A,
+FBTEFKAX,Factor corretion of learning speed canister charge: f(fkastexm_w),curve,0x1D2C8A,5,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D2C80,
+FVERZDYN,dynamic factor delay of purge flow in the manifold,curve,0x1D2CA0,5,1,16,unsigned,5.96e-08,min,ford:sig,,0x1C6C29,
+KADMKAFK,characteristic line learning speed of fuel tank evaporation,curve,0x1D2CB6,5,1,16,unsigned,0.0009765625,kg/(h*s),ford:high,,0x1D2CAC,
+KAKFAD,adsorbtion constante of the charcoal canister,curve,0x1D2CCA,4,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D2CC2,
+ZKKHCTEV,Filter time constant for HC- concentration st PCV,curve,0x1D2CF6,4,1,16,unsigned,1.0,s,ford:high,,0x1D2CEE,
+KFFLUSHR,operation range for flushing of PVV during part load,map,0x1D2D1A,4,4,8,unsigned,1.0,,ford:sig,,0x1D2D12,0x1D2D16
+KLAPCMUB,Battery voltage correction PCM-control,curve,0x1D2D31,6,1,16,unsigned,3.0517578125e-05,-,ford:sig,,0x1D2D2B,
+ZKFSTV,characteristiv line time constant fuel level filter,curve,0x1D2E2E,4,1,16,unsigned,1.0,s,ford:high,,0x1D2E26,
+KLVAPORP,pressure of fuel vaporation,curve,0x1D2F07,4,1,16,unsigned,0.1,kPa,ford:sig,,0x1D2F03,
+TAPCMSOL,Characteristic map pre-control of duty cycle PCM,map,0x1D2F38,6,6,16,unsigned,0.00152587890625,%,ford:sig,,,
+FVSTPNM,Correction factor dependent on engine speed for PCM control,curve,0x1D2F9A,6,1,16,unsigned,6.103515625e-05,-,ford:sig,,0x1D2F8E,
+KLVAPSOL,Additive excitation PCM from pndsvgb_w-gradient,curve,0x1D2FAE,7,1,16,signed,0.0030517578125,%,ford:sig,,,
+KLVARK,Additive excitation PCM from rk-gradient,curve,0x1D2FCC,7,1,16,signed,0.0030517578125,%,ford:sig,,,
+KLVSPVV,Fuel volume flow pressure vent valve,curve,0x1D2FEA,6,1,16,unsigned,0.0078521728515625,l/h,ford:sig,,,
+KFDZK,Delta ignition angle with permanent knocking,map,0x1D303F,16,12,8,signed,0.75,Grad KW,ford:high,,0x1C8DC4,0x1C8DE6
+KFSWKFZK,Threshold of the ign.-angle timing retards for ignition-angle map switch-over,map,0x1D30FF,16,12,8,unsigned,-0.75,Grad KW,ford:high,,0x1C8DC4,0x1C8DE6
+KFDZWKG,Ignition angle correction due to knock limit shift,map,0x1D31CE,8,5,8,signed,0.75,Grad KW,ford:high | CONFIRMED code+log 2026-11-18 (rich-mixture advance),,0x1D31C1,0x1D31C9
+DZWAML,Up/down regulation speed between the maps of limitation,curve,0x1D3216,12,1,8,signed,0.75,Grad KW,ford:sig,,0x1D320A,
+KLFZWMNKH,Spark retard gradient of burning limit during after-start at cat.heating,curve,0x1D3229,6,1,16,unsigned,1.0,s,ford:high,,0x1D3223,
+KLFZWMNST,Spark retard gradient of burning limit during after-start,curve,0x1D323D,6,1,16,unsigned,1.0,s,ford:high,,0x1D3237,
+WPHN,phase correction,curve,0x1D324F,8,1,8,signed,0.75,Grad KW,ford:sig,,0x1C8CC4,
+DZWSTTA,Delta ignition angle during start (VVT),curve,0x1D325E,6,1,8,signed,0.75,Grad KW,ford:high,,0x1D3258,
+FZWWLRLN,weighting of delta ignition angle at warm-up,map,0x1D3264,12,6,8,unsigned,0.0078125,-,ford:sig,,0x1C8CCD,0x1C8D01
+KFZWWLNM,Delta ignition sparc advance during engine warm up phase,map,0x1D32AC,12,12,8,signed,0.75,Grad KW,ford:sig,,0x1C8CCD,0x1C8D18
+KFZWWLRL,Delta ignition sparc advance during engine warm up phase,map,0x1D334C,8,6,8,signed,0.75,Grad KW,ford:high,,0x1D333E,0x1D3346
+KFDYESPF,Threshold for dynamic presetting values,map,0x1D337C,16,4,16,signed,0.0390625,hPa,ford:high,,0x1D4116,0x1D354D
+KFDYESPFOF,Offset threshold for dynamic presetting values,map,0x1D33FC,16,4,16,signed,0.0390625,hPa,ford:high,,0x1D4116,0x1D354D
+KRAL1N,load range for adaption maps 1,curve,0x1D347C,16,1,16,unsigned,0.0234375,%,ford:sig,,0x1D4116,
+KRAL2N,load range dor adaption maps 2,curve,0x1D349C,16,1,16,unsigned,0.0234375,%,ford:sig,,0x1D4116,
+KRAL3N,load range for adaption maps 3,curve,0x1D34BC,16,1,16,unsigned,0.0234375,%,ford:sig,,0x1D4116,
+LKRN,load-signal threshold knock control,curve,0x1D34DC,16,1,16,unsigned,0.0234375,%,ford:sig,,0x1D4116,
+NGKRWN,threshold revolution gradient for dynamics detection,curve,0x1D34FC,16,1,16,signed,0.39063,1/min/s,ford:sig,,0x1D4116,
+AZKELDYN,ignition per cylinder for load dynamics => knock detection,curve,0x1D351C,16,1,8,unsigned,1.0,,ford:sig,,0x1D4116,
+AZKRLDYN,number of ignition per cyl. during knock control load dynamic,curve,0x1D352C,16,1,8,unsigned,1.0,,ford:sig,,0x1D4116,
+AZKRNDYN,number of ignition for knock control engine speed dynamic,curve,0x1D353C,16,1,8,unsigned,1.0,,ford:sig,,0x1D4116,
+UDKSNO,upper reference voltage threshold for diagnosis knock sensors,curve,0x1D3566,16,1,16,unsigned,0.0006103515625,V,ford:sig,,0x1D4116,
+UDKSNU,lower reference voltage threshold for diagnosis knock sensors,curve,0x1D3586,16,1,16,unsigned,0.0006103515625,V,ford:sig,,0x1D4116,
+DZWTIN,delta ignition angle at tip-in,curve,0x1D35A8,16,1,8,signed,0.75,Grad KW,ford:sig,,0x1D4116,
+DWKRMSN,delta ignition angle knock control distance from mean retarding,curve,0x1D35B8,16,1,8,signed,0.75,Grad KW,ford:sig,,0x1D4116,
+KRDWSN,knock control delta angle safety,curve,0x1D35C8,16,1,8,signed,0.75,Grad KW,ford:sig,,0x1D4116,
+KRMXN,maximum retard adjustment,curve,0x1D35D8,16,1,8,signed,0.75,Grad KW,ford:sig,,0x1D4116,
+KFTKRVFN,time for ignition advancing knock ingnition,map,0x1D3612,16,4,16,signed,1.0,,ford:sig,,0x1D35EA,0x1D360A
+KFTKRVFSN,delay-time during fast ignition advancing of the KC,map,0x1D36BE,16,4,16,signed,1.0,,ford:sig,,0x1D3696,0x1D36B6
+KLTNRDE,characterisitic for tooth times at reverse rotation,curve,0x1D37AD,3,1,8,unsigned,1.0,ms,ford:high,,0x1D37AA,
+WNWKMA,Correction angle camshaft over engine temperature for outlet bank 1,curve,0x1D37B6,5,1,8,signed,0.0625,Grad KW,ford:sig,,0x1D37B1,
+WNWKME,Correction angle camshaft over engine temperature for inlet bank 1,curve,0x1D37BB,5,1,8,signed,0.0625,Grad KW,ford:sig,,0x1D37B1,
+WNWKN,Correction angle camshaft over speed,curve,0x1D37C7,6,1,8,signed,0.0625,Grad KW,ford:high,,0x1D37C1,
+KLDMWDK,speed dependensy of throttle-angle for Wide Open Throttle,curve,0x1D380C,6,1,16,signed,0.39215686274509803,%DK,volvo:sig,same,0x1D3800,
+KFMODI,map for misfire modes and their parameter,map,0x1D3878,6,8,16,unsigned,1.0,,ford:sig,,,
+KFAESTGSUI,Map for adaptive engine speed threshold for gear shift-up indication,map,0x1D3888,6,8,16,unsigned,0.25,1/min,volvo:sig,same,0x1D386C,0x1D3878
+LNXQTM,natural logarithm from temperature quotient,curve,0x1D3901,12,1,16,unsigned,6.103515625e-05,-,ford:sig,,,
+TNLSGM,Delay time for ECU shut-off,curve,0x1D392D,6,1,16,unsigned,1.0,s,ford:sig,,0x1D3927,
+KFOLCOR1,correction factor for oiltemperature model for variable nmot and rl,map,0x1D3972,7,5,8,signed,0.75,Grad C,ford:sig,,0x1D3966,0x1D396D
+KFOLCOR2,correction factor for oiltemperature model for variable tbgtol and rl,map,0x1D39A1,5,5,8,signed,0.75,Grad C,ford:high,,0x1D3997,0x1D399C
+KLFVFZGOLT,correction factor vehicle speed dependent,curve,0x1D39C1,6,1,8,unsigned,0.0078125,-,ford:high,,0x1D39BB,
+KLTANSEFOF,"correction intake air temperature dependent, engine fan OFF",curve,0x1D39CE,6,1,8,unsigned,0.75,Grad C,ford:high,,0x1D39C8,
+KLTANSEFON,"correction intake air temperature dependent, engine fan ON",curve,0x1D39DB,6,1,8,unsigned,0.75,Grad C,ford:high,,0x1D39D5,
+KLDT,correction stop time dependent,curve,0x1D3A28,4,1,8,unsigned,0.75,Grad C,ford:sig,,,
+KFDTUMTAV,map for offset intake-air temperature -> ambient temperature,map,0x1D3A6C,8,8,8,unsigned,0.75,Grad C,ford:sig,,0x1D3A5C,0x1D3A64
+KLDMLMODTU,delta air threshold for ambient air temperature model dependent on engine speed ,curve,0x1D3B19,4,1,8,unsigned,4.0,kg/h,ford:sig,,0x1D3B15,
+TEBXLI,Characteristic line for E-Box temperature sensor,curve,0x1D3BC8,18,1,8,unsigned,0.75,Grad C,ford:sig,,0x1D3BA4,
+KFBMAT,Matrix including constants,map,0x1D3C58,8,8,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D3C38,0x1D3C48
+KFDMAT,Matrix including constants,map,0x1D3CF4,6,6,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D3CDC,0x1D3CE8
+KLCMAT,Vector including constants,curve,0x1D3D4A,6,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D3D3E,
+TANSELI,"intake air temperature calculation, inverse function",curve,0x1D3D77,20,1,8,unsigned,0.75,Grad C,ford:high,,0x1D3D63,
+KFIGESGA,Total transmission ratios for different gear types,map,0x1D3D78,8,10,16,unsigned,0.01,-,ford:sig,,0x1D3D66,0x1D3D6E
+DTLRTML,proportion factor to decrease waiting time up to tmot-threshold for closed loop,curve,0x1D3DD7,7,1,8,unsigned,0.390625,%,ford:high,,0x1D3DD0,
+KLDTMFXTM,charact. line delta TMOT- threshold for not plausible fixed signal,curve,0x1D3DF0,8,1,8,unsigned,0.75,Grad C,ford:high,,0x1D3DE8,
+KLDTMXFXTM,Charact. line delta TMOT- threshold for not plausible fixed signal (extended),curve,0x1D3E01,8,1,8,unsigned,0.75,Grad C,ford:high,,0x1D3DF9,
+MLOBKLHV,maximum threshold of air-mass flow for condition radiation power high,curve,0x1D3E0F,5,1,8,unsigned,4.0,kg/h,ford:high,,0x1D3E0A,
+MLOBKLNV,maximum threshold of air-mass flow for condition radiation power low,curve,0x1D3E1A,5,1,8,unsigned,4.0,kg/h,ford:high,,0x1D3E15,
+MLUBKLHV,minimum threshold of air-mass flow for condition radiation power high,curve,0x1D3E25,5,1,8,unsigned,4.0,kg/h,ford:high,,0x1D3E20,
+MLUBKLNV,minimum threshold of air-mass flow for condition radiation power low,curve,0x1D3E30,5,1,8,unsigned,4.0,kg/h,ford:high,,0x1D3E2B,
+TWLRTMS,waiting time up to check engine temp. signal exceeding threshold for closed loop,curve,0x1D3E5D,4,1,8,unsigned,20.0,s,ford:high,,0x1D3E59,
+FABSTT,Factor parking time for model temperature,curve,0x1D3E72,5,1,16,unsigned,3.0517578125e-05,-,ford:high,,0x1D3E68,
+KFDTMRS,char.line for gradient of engine coolant temp. during cutoff for reference model,map,0x1D3E87,5,4,8,signed,0.000732421875,Grad C,ford:high,,0x1D3E7E,0x1D3E83
+KFDTMTE,char. map for gradient of engine coolant temperature in substitute temp. model,map,0x1D3EA6,5,4,8,signed,0.000732421875,Grad C,ford:high,,0x1D3E9D,0x1D3EA2
+KFDTMTR,char. map for gradient of engine coolant temperature in reference model,map,0x1D3EC5,5,4,8,signed,0.000732421875,Grad C,ford:high,,0x1D3EBC,0x1D3EC1
+KFDTMTU,char. map for correction gradient of engine coolant temp. at low warming up,map,0x1D3EE4,5,4,8,signed,0.000732421875,Grad C,ford:high,,0x1D3EDB,0x1D3EE0
+TMDMMAT,Default temperature dependent on parking time during TDTMMA,curve,0x1D3F20,3,1,16,unsigned,0.75,Grad C,ford:high,,0x1D3F1A,
+TMHSTVFZ,Evaluation time for TMOT High Side Check diagnosis,curve,0x1D3F31,10,1,16,unsigned,0.1,s,ford:high,,0x1D3F27,
+TMOTELI,"engine temperature calculation, inverse function",curve,0x1D3F70,20,1,16,unsigned,0.0029296875,Grad C,ford:high,,0x1D3F48,
+KLDNVQMX,Curve for maximum n/v quotient for rationality check,curve,0x1D3FBE,6,1,16,unsigned,0.0078125,(1/min) / (km/h),ford:sig,,,
+MXTCRNK,Maximum time threshold to register the event 'Long Cranking Time',curve,0x1D4201,8,1,16,unsigned,0.1,s,ford:sig,,0x1D41F9,
+FLRAWG,"amplification of load controller AT, converter clutch closed",curve,0x1D422E,8,1,8,unsigned,0.0625,-,ford:sig,,,
+KFFGDMAR,Weighting factor f. max. steady-state surge damp. intervention,map,0x1D4256,6,6,8,unsigned,0.0078125,-,ford:sig,,0x1D424A,0x1D4250
+KFFRARAW,Amplification factor at AT,map,0x1D4289,6,7,8,unsigned,0.01220703125,%/1/min,ford:sig,,0x1D427C,0x1D4282
+KIFZGAWG,"amplification of vehicle model integrator at AT, converter clutch closed",curve,0x1D4429,8,1,16,unsigned,0.07421875,-,ford:sig,,,
+KFFRTMKI,Factor for torque limitation depending on engine speed and gear,map,0x1D447B,6,8,8,unsigned,0.0078125,-,volvo:high,same,0x1D446D,0x1D4473
+KLFRTMKI,Look up table control factor from engine temperature,curve,0x1D44B0,4,1,8,unsigned,0.0078125,-,ford:high,,0x1D44AC,
+KFMDBGRG,map with the value of the torque limitation,map,0x1D44D6,4,7,16,unsigned,0.00152587890625,%,ford:high,,0x1D44C0,0x1D44C8
+MDGAT,Look up table for torque limitation by high exhaust temperature,curve,0x1D451C,6,1,16,unsigned,0.00152587890625,%,ford:high,,0x1D4510,
+MKBRMXWP,Maximum clutch torque when brake is applied,curve,0x1D453C,8,1,16,unsigned,0.00152587890625,%,volvo:high,same,0x1D452C,
+KLMRKFHO,Correctionb factor altitude depending torque reserve,curve,0x1D4556,3,1,8,unsigned,0.0625,-,ford:high,,0x1D4550,
+NMAXTO,engine speed limit at high oil temperature,curve,0x1D45E0,4,1,16,unsigned,0.25,1/min,ford:high,,0x1D45D8,
+KPVMXG,Gain factor P-component of VMAX control,curve,0x1D45F3,8,1,8,unsigned,0.391,%/km/h,ford:sig,,,
+TVMXPRG,Speed prediction time for VMAX control,curve,0x1D45FB,8,1,8,unsigned,0.02,s,ford:sig,,,
+KIVMXG,Gain factor for I-component of VMAX control,curve,0x1D4603,8,1,16,unsigned,0.00762939453125,%/(km/h)/s,ford:sig,,,
+KFWPFGR,Inverse pedal characteristic for cruise mode,map,0x1D4648,16,12,16,unsigned,0.00152587890625,%,volvo:high,same,0x1D4610,0x1D4630
+WPFGRBMR,Back-calculated pedal value during acceleration with FGR,curve,0x1D47EC,16,1,16,unsigned,0.00152587890625,%,ford:high,,0x1D47CC,
+TSWKNBGA,time to set value correction after acceleration finished,curve,0x1D484F,8,1,8,unsigned,0.02,s,ford:high,,0x1D4847,
+TSWKNVGA,time to set value correction after deceleration finished,curve,0x1D4860,8,1,8,unsigned,0.02,s,ford:high,,0x1D4858,
+BRABEVI,acceleration at accelerating ramp,curve,0x1D487A,8,1,16,unsigned,0.0004239,,ford:high,,0x1D486A,
+DVSKNBGA,delta velocity for set value correction after acceleration,curve,0x1D48A3,8,1,16,unsigned,0.0078125,km/h,ford:high,,0x1D489B,
+DVSKNVGA,delta velocity for set value correction after deceleration,curve,0x1D48BD,8,1,16,unsigned,0.0078125,km/h,ford:high,,0x1D48B5,
+KFBRAWA,Target acceleration for resumption,map,0x1D48FC,8,6,16,unsigned,0.0004239,,ford:high,,0x1D48E0,0x1D48F0
+MRFGRIMX,Maximum FGR initialization value,curve,0x1D496A,6,1,8,unsigned,0.78125,%,ford:high,,0x1D4964,
+KFVOFFS,velocity offset for cruise control,map,0x1D49AC,6,8,16,unsigned,0.0078125,km/h,ford:high,,0x1D4990,0x1D499C
+KKFFGRGA,amplification rate during cruising for cruise control,curve,0x1D4A1E,8,1,16,unsigned,0.048828125,%,ford:high,,0x1D4A0E,
+KRAFGRGA,amplification rate at ramp for cruise control,curve,0x1D4A40,8,1,16,unsigned,0.048828125,%,ford:high,,0x1D4A30,
+TN2FGRGA,double denominator time constant for cruise control,curve,0x1D4A68,8,1,16,unsigned,0.02,s,ford:high,,0x1D4A58,
+TVLADV,Integrator time constant at vlast-calculation,curve,0x1D4A89,8,1,16,unsigned,1.0,s,ford:sig,,,
+TZ2FGRGA,double numerator time constant for cruise control,curve,0x1D4AAC,8,1,16,unsigned,0.02,s,ford:high,,0x1D4A9C,
+VLMXVZ,Max. value for vlast_w,curve,0x1D4ACA,6,1,16,unsigned,0.0078125,km/h,ford:high,,0x1D4ABE,
+KFWZLSD,reduction factor for time constant load-shock damping,map,0x1D4B00,4,4,8,unsigned,0.00390625,-,volvo:high,same,0x1D4AF8,0x1D4AFC
+NMGALSDO,gear and engine speed depended threshold for load reversal damping at open clut.,curve,0x1D4B25,8,1,8,unsigned,40.0,1/min,ford:sig,,,
+NMGALSDU,gear and engine speed depended threshold for load reversal damping at open clut.,curve,0x1D4B2D,8,1,8,unsigned,40.0,1/min,ford:sig,,,
+DMDPUG,delta torque threshold end of dashpot (closed converter),curve,0x1D4B40,8,1,16,unsigned,0.00152587890625,%,volvo:high,same,,
+DMIOWLSD,Delta torque for initi. of load reversal damping at open converter lockup clutch,curve,0x1D4B59,8,1,16,signed,0.00152587890625,%,ford:sig,,,
+DMLSDUG,Delta torque for finishing positive slope limitation,curve,0x1D4B72,8,1,16,unsigned,0.00152587890625,%,volvo:sig,same,0x1D4B62,
+DMRFAWEN,Threshold mrfa gradient f. deactivation of PT1 filter at resumre,curve,0x1D4B8C,4,1,16,unsigned,0.0030517578125,%,volvo:high,same,0x1D4B84,
+KFDLSD,Damping of PT2 filter in positive torque slope limitation (closed converter),map,0x1D4BF4,8,6,16,unsigned,3.0517578125e-05,-,ford:high,,0x1D40DF,0x1D41C6
+MRFAVLN,Full load detection threshold of the relative driver request,curve,0x1D4D32,14,1,16,unsigned,0.0030517578125,%,ford:high,,0x1D4D16,
+FKFPEDV,factor for interpolation between the two pedal maps,curve,0x1D4D55,2,1,8,unsigned,0.0078125,-,ford:high,,0x1D4D53,
+KFMRES,LLR: torque reserve at idle and near-idle zone,map,0x1D4D84,6,4,8,unsigned,0.0976470588235294,%,ford:high,,0x1C8CB4,0x1C8D64
+KFMRESK,LLR: torque reserve at idle and near-idle zone clutch disengaged,map,0x1D4D9C,6,4,8,unsigned,0.0976470588235294,%,ford:high,,0x1C8CB4,0x1C8D64
+KFMRESKH,Torque reserve during catalyst heating,map,0x1D4DB4,6,4,8,unsigned,0.0976470588235294,%,ford:med,,,0x1C8D25
+KFMRESNL,Torque reserve in non idling state,map,0x1D4DCC,6,4,8,unsigned,0.0976470588235294,%,ford:high,,0x1C8CB4,0x1C8D64
+KFMRESPS,LLR: torque reserve at idle and near-idle zone power steering,map,0x1D4DE4,6,4,8,unsigned,0.0976470588235294,%,ford:high,,0x1C8CB4,0x1C8D64
+KFMRESTA,Torque margin dependent on tans,map,0x1D4DFC,4,4,8,unsigned,0.0976470588235294,%,ford:high,,0x1C8E00,0x1C8D64
+KLDNLLDE,characteristic curve: torque reserve for speed undershoot,curve,0x1D4E13,6,1,8,signed,100.0,1/min/s,ford:high,,0x1D4E0D,
+KLMRESLI,map: temperature depending torque reserve limit,curve,0x1D4E19,10,1,8,unsigned,0.0976470588235294,%,ford:sig,,0x1D4170,
+KLMRESTM,characteristic for torque reserve after start,curve,0x1D4E2E,10,1,8,unsigned,0.0976470588235294,%,ford:high,,0x1D4E24,
+KLMRHO,map: altitude depending torque reserve,curve,0x1D4E43,10,1,8,unsigned,0.0976470588235294,%,ford:high,,0x1D4E39,
+FNSSTKM,Factor to weight the desired speed at start during catalyst heating,curve,0x1D4E6A,6,1,8,unsigned,0.0078125,-,ford:high,,0x1D4E64,
+FNSSTM,Factor for target engine speed during start,curve,0x1D4E77,6,1,8,unsigned,0.0078125,-,ford:high,,0x1D4E71,
+KFHLAMN,map for target idle speed at heating demand,map,0x1D4E87,4,4,8,unsigned,10.0,1/min,ford:high,,0x1D4E7F,0x1D4E83
+KFNLLNST,idle speed after start,map,0x1D4E97,6,6,8,unsigned,10.0,1/min,ford:high,,0x1D4188,0x1D414F
+KFZNSM,time constant for decay of reference speed,map,0x1D4EBB,6,6,8,unsigned,1.0,s,ford:med,,0x1D414F,
+KLNLLV,desired speed depending on vehicle speed.,curve,0x1D4EE5,5,1,8,unsigned,10.0,1/min,ford:high,,0x1D4EE0,
+NLLMG,desired engine speed,map,0x1D4F03,6,8,8,unsigned,10.0,1/min,ford:high,,0x1D414F,0x1D4F7E
+NSACFSTM,desired engine speed with air conditioner on (S_AC = 1) and AT in Drive (S_fs=1),curve,0x1D4F3B,6,1,8,unsigned,10.0,1/min,ford:high,,0x1D4F35,
+NSACTM,desired engine speed with air conditioner on (S_AC = 1),curve,0x1D4F48,6,1,8,unsigned,10.0,1/min,ford:high,,0x1D4F42,
+NSTOEL,idle speed reference: engine oil overheat,curve,0x1D4F5F,4,1,8,unsigned,10.0,1/min,ford:high,,0x1D4F5B,
+NZHDTL,Speed threshold for decrementing time counter for hot idling,curve,0x1D4F6A,6,1,8,unsigned,40.0,1/min,ford:high,,0x1D4F64,
+NZHITL,Speed threshold for incrementing time counter for hot idling,curve,0x1D4F77,6,1,8,unsigned,40.0,1/min,ford:high,,0x1D4F71,
+DLIMXDNS,offset for upper integrator limit for active air condition,curve,0x1D4F9F,6,1,8,unsigned,0.0976470588235294,%,ford:med,,,
+DVNG,LLR: D-gain depending of ngfil for vehicle at rest,curve,0x1D4FA8,6,1,8,unsigned,-0.00048828125,(%*s)/(1/min),ford:med,,,
+DVNGKH,LLR: D-gain depending of ngfil for vehicle at rest (katheating),curve,0x1D4FAE,6,1,8,unsigned,-0.00048828125,(%*s)/(1/min),ford:med,,,
+IVDNDTEH,integrator parameter when DTEV active in homogenous-mode,curve,0x1D4FB5,10,1,8,unsigned,0.0023828125,%/(s*1/min),ford:med,,,
+IVDNHOM,integrator parameter in homogenous mode,curve,0x1D4FBF,10,1,8,unsigned,0.0023828125,%/(s*1/min),ford:med,,,
+IVDNHOMV,integrator parameter in homogenous mode when clutch engaged,curve,0x1D4FC9,10,1,8,unsigned,0.0023828125,%/(s*1/min),ford:med,,,
+LIMXVDNS,upper integrator limit for rolling car,curve,0x1D4FD9,6,1,8,unsigned,0.0976470588235294,%,ford:med,,,
+LISTM,value of idle speed control integrator during start,curve,0x1D4FDF,6,1,8,unsigned,0.0976470588235294,%,ford:sig,,0x1D414F,
+PVDNKFKH,LLR: P-gain for vehicle at rest (cat heating),map,0x1D4FF4,6,4,8,unsigned,0.00152587890625,-,ford:sig,,,0x1D4FF0
+FWDMVAD,factor for the weighting of dmvad_w in %MDMIN,curve,0x1D501E,8,1,16,unsigned,1.52587890625e-05,-,ford:high,,0x1D500E,
+KFMIMN,minimum drag torque,map,0x1D5040,8,8,16,unsigned,0.00152587890625,%,ford:sig,,0x1D5030,
+KFVERST,weighting map for increasing control of friction torque,map,0x1D50D8,3,3,16,unsigned,0.0001220703125,-,ford:high,,0x1D50CC,0x1D50D2
+KLMIMNH,altitude correction of mimin_w,curve,0x1D50F1,6,1,8,signed,0.1953125,%,ford:high,,0x1D50EB,
+FNSTABNV,Factor for engine speed stabilisation by torque,curve,0x1D5106,6,1,16,unsigned,0.0001220703125,-,ford:high,,0x1D50FA,
+DMDNSM,Torque offset for after cranking compensation,curve,0x1D511C,8,1,8,unsigned,0.390625,%,ford:high,,0x1D5114,
+KFMDS,map for engine drag torque,map,0x1D5126,16,11,16,unsigned,0.00152587890625,%,ford:high,,0x1C8DA2,0x1CA50E
+KFMDSNW,,map,0x1D5286,16,11,16,unsigned,0.00152587890625,%,ford:high,,0x1C8DA2,0x1CA50E
+MDSH,Part of the resistant torque depending on altitude,curve,0x1D53ED,6,1,8,signed,0.19569471624266144,%,ford:high,,0x1D53E7,
+MDSM,temperatuer share of enginie friction torque,curve,0x1D53F4,10,1,16,unsigned,0.00152587890625,%,ford:sig,,0x1D4170,
+MDSMNW,,curve,0x1D5408,10,1,16,unsigned,0.00152587890625,%,ford:sig,,0x1D4170,
+MDVGLW,torque demand of countershaft,curve,0x1D5423,6,1,16,unsigned,0.00152587890625,%,ford:high,,0x1D541D,
+ZMDNSM,time constant for decay of torque offset after cranking,curve,0x1D5439,8,1,16,unsigned,1.0,s,ford:high,,0x1D5431,
+KFDMDKOE,Starting value torque filter when air-conditioner compressor is activated,map,0x1D5470,6,6,8,unsigned,0.195,%,ford:high,,0x1D5464,0x1D546A
+KFMDKO,map for torque needed for air condition,map,0x1D54A2,6,6,8,unsigned,0.195,%,ford:high,,0x1D5496,0x1D549C
+KLTVKOKAOF,Time delay for AC-compressor torque compensation demand  'off',curve,0x1D54CD,6,1,8,unsigned,0.02,s,ford:high,,0x1D54C7,
+MDLFFTV,Torque demand from engine cooling fan,curve,0x1D54DC,6,1,8,unsigned,0.195,%,ford:high,,0x1D54D6,
+TRPSPD,Steeing angle change rate converted into dynamic torque reserve,curve,0x1D54EE,8,1,8,unsigned,0.195,%,ford:high,,0x1D54E6,
+TRPSPST,Steering angle converted into static torque reserve,curve,0x1D5502,8,1,8,unsigned,0.195,%,ford:high,,0x1D54FA,
+KLZKOKAOF,filter constant for AC-compressor torque compensation demand  'off',curve,0x1D5577,6,1,16,unsigned,1.0,s,ford:sig,,0x1D5571,
+DMDWM,D-component converter torque when engaging gear selection,curve,0x1D558C,8,1,8,unsigned,0.390625,%,ford:sig,,0x1D55A4,
+FMDWAT,Factor to calculate the converter torque depending of oil temperature,curve,0x1D5594,8,1,8,unsigned,4.7e-07,-,ford:sig,,0x1D55A4,
+KLDMDWMX,limitation of converter torque for safety concept,curve,0x1D55A0,3,1,8,unsigned,0.78125,%,ford:high,,0x1D559D,
+KFRLMN,Minimum charge during fuel on,map,0x1D5627,12,6,8,unsigned,0.75,%,ford:high,,0x1C8CDA,0x1D4156
+KFRLMNSA,Minimum rl during fuel cut off,map,0x1D566F,12,6,8,unsigned,0.75,%,ford:high,,0x1C8CDA,0x1D4156
+KFRLMNST,Minimum charge during after start,map,0x1D56D4,6,6,16,unsigned,0.0234375,%,ford:high,,0x1D56BC,0x1D56C8
+REDZEM,threshold between ignition intervention and injector disabling,curve,0x1D572D,5,1,8,unsigned,1.0,,ford:high,,0x1D5728,
+KFLDRX,maximum load boost pressure control,map,0x1D5766,16,6,16,unsigned,0.0234375,%,volvo:sig,changed,0x1D573A,0x1D575A
+KLETAVGMN,Lookup table minimum defined efficiency,curve,0x1D5838,8,1,16,unsigned,0.0025,%,volvo:sig,same,0x1D5828,
+MDMAXNMOT,Maximum indicated torque for overpower protection,curve,0x1D586A,16,1,16,unsigned,0.00152587890625,%,volvo:sig,same,0x1D584A,
+DMAUFN,delta torque rise after torque intervention,curve,0x1D589C,8,1,16,unsigned,0.00152587890625,%,ford:sig,,0x1D588C,
+KFFNWA,,map,0x1D58BD,6,6,8,unsigned,0.00390625,-,volvo:sig,same,0x1D58B1,0x1D58B7
+KFFNWE,,map,0x1D58EF,6,6,8,unsigned,0.00390625,-,volvo:sig,same,0x1D58E3,0x1D58E9
+KFNWWUA,,map,0x1D595C,18,16,16,unsigned,0.0078125,Grad KW,volvo:sig,changed,0x1D5918,0x1D593C
+KFNWWUE,,map,0x1D5BE4,18,16,16,unsigned,0.0078125,Grad KW,volvo:sig,same,0x1D5BA0,0x1D5BC4
+CWKHZW,,scalar,0x1C725E,1,1,16,,1.0,,volvo2:solid,changed,,
+DELAYZWMNA,,scalar,0x1C725F,1,1,16,,1.0,,volvo2:solid,changed,,
+DNTIPDYN,,scalar,0x1C7260,1,1,16,,100.0,,volvo2:solid,changed,,
+DNZWMN,,scalar,0x1C7261,1,1,16,,40.0,,volvo2:solid,changed,,
+NMKFNWLLA,,scalar,0x1CD72A,1,1,16,,0.25,,volvo2:solid,changed,,
+NMKFNWLLE,,scalar,0x1CDE7C,1,1,16,,0.25,,volvo2:solid,changed,,
+TNWWSPA,,scalar,0x1CD058,1,1,16,,0.2,,volvo2:solid,changed,,
+TNWWSPE,,scalar,0x1CD7AB,1,1,16,,0.2,,volvo2:solid,changed,,
+VNWLLPA,,scalar,0x1CD059,1,1,16,,1.25,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWRAS,,scalar,0x1CD750,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSAAPP,,scalar,0x1CD752,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSAPFA,,scalar,0x1CD754,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSAPFE,,scalar,0x1CDEA2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSAPSA,,scalar,0x1CD756,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSAPSE,,scalar,0x1CDEA4,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSEAPP,,scalar,0x1CDEA6,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSGUDA,,scalar,0x1CD758,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSGUDE,,scalar,0x1CDEA8,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMNA,,scalar,0x1CD75A,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMNA,,scalar,0x1CD75A,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMNE,,scalar,0x1CDEAA,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMNE,,scalar,0x1CDEAA,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMXA,,scalar,0x1CD75C,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMXA,,scalar,0x1CD75C,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMXE,,scalar,0x1CDEAC,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWSMXE,,scalar,0x1CDEAC,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVAS,,scalar,0x1CD782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+WNWVEO,,scalar,0x1CDED2,1,1,16,,0.0078125,,volvo2:solid,changed,,
+TTANWRMAXA,,scalar,0x1CDF94,1,1,16,,1.0,,volvo2:solid,changed,,
+TTANWRMAXE,,scalar,0x1CE07A,1,1,16,,1.0,,volvo2:solid,changed,,
+DMRAA,,scalar,0x1D454C,1,1,16,,0.00152587890625,,volvo2:solid,changed,,
+ITNMXH,,scalar,0x1D459C,1,1,16,,0.1,,volvo2:solid,same,,
+NMAXDV,,scalar,0x1D459E,1,1,16,,0.25,,volvo2:solid,same,,
+NMAXDZ,,scalar,0x1D45B0,1,1,16,,0.25,,volvo2:solid,same,,
+NMAXKR,,scalar,0x1D45C2,1,1,16,,0.25,,volvo2:solid,same,,
+NMAXNL,,scalar,0x1D45C4,1,1,16,,0.25,,volvo2:solid,same,,
+TMOTNMX,,scalar,0x1D459A,1,1,8,,0.75,,volvo2:solid,same,,
+VNMX,,scalar,0x1D459B,1,1,8,,1.25,,volvo2:solid,same,,
+CWBGWPFGR,,scalar,0x1D460C,1,1,16,,1.0,,volvo2:solid,changed,,
+NMAXTRP,,scalar,0x1D45E8,1,1,16,,0.25,,volvo2:solid,same,,
+TNMXH,,scalar,0x1D45EA,1,1,16,,0.1,,volvo2:solid,same,,
+CWBKV,,scalar,0x1CB511,1,1,16,,1.0,,volvo2:solid,changed,,
+MXNUMBKVBR,,scalar,0x1CB51B,1,1,16,,1.0,,volvo2:solid,changed,,
+RVGLKD,,scalar,0x1CB50E,1,1,16,,1.25,,volvo2:solid,changed,,
+RVGLKMN,,scalar,0x1CB50F,1,1,16,,1.25,,volvo2:solid,changed,,
+TDBKVS1,,scalar,0x1CB513,1,1,16,,0.02,,volvo2:solid,changed,,
+TDBKVS2,,scalar,0x1CB515,1,1,16,,0.02,,volvo2:solid,changed,,
+TDBKVS3,,scalar,0x1CB517,1,1,16,,0.02,,volvo2:solid,changed,,
+TDBKVSR,,scalar,0x1CB519,1,1,16,,0.02,,volvo2:solid,changed,,
+TENGLIM,,scalar,0x1CB50C,1,1,8,,0.75,,volvo2:solid,same,,
+VFZACFRQ,,scalar,0x1CB50D,1,1,16,,1.25,,volvo2:solid,changed,,
+CNFMDWAN,,scalar,0x1C9974,1,1,16,,1.0,,volvo2:solid,changed,,
+CWMDMIN,,scalar,0x1C9972,1,1,16,,1.0,,volvo2:solid,changed,,
+DMDWHYS,,scalar,0x1C9975,1,1,16,,0.390625,,volvo2:solid,changed,,
+FDMDWAN,,scalar,0x1C9983,1,1,16,,0.00390625,,volvo2:solid,changed,,
+FNRAD,,scalar,0x1C9984,1,1,16,,0.0625,,volvo2:solid,changed,,
+FVDMDWAN,,scalar,0x1C9985,1,1,16,,0.03125,,volvo2:solid,changed,,
+SRKTEVS,,scalar,0x1C98CE,1,1,16,,0.02,,volvo2:solid,changed,,
+TVLISTU,,scalar,0x1C98CF,1,1,16,,0.02,,volvo2:solid,changed,,
+TVLLRPST,,scalar,0x1C98D0,1,1,16,,0.2,,volvo2:solid,changed,,
+TVLLRST,,scalar,0x1C98D1,1,1,16,,0.02,,volvo2:solid,changed,,
+TVPKH,,scalar,0x1C9970,1,1,16,,0.2,,volvo2:solid,changed,,
+ZFLLRPL,,scalar,0x1C98D2,1,1,16,,5.1,,volvo2:solid,changed,,
+ZFMDVERL,,scalar,0x1C9973,1,1,16,,5.1,,volvo2:solid,changed,,
+ZKLLRD,,scalar,0x1C98D3,1,1,16,,5.1,,volvo2:solid,changed,,
+ZLIBG,,scalar,0x1C98D4,1,1,16,,5.1,,volvo2:solid,changed,,
+ZNFNGLL,,scalar,0x1C98D5,1,1,16,,5.1,,volvo2:solid,changed,,
+DLUL,,scalar,0x1CB780,1,1,8,,5.0,,volvo2:solid,same,,
+DLUL,,scalar,0x1CB780,1,1,8,,5.0,,volvo2:solid,same,,
+DPLPLGD,,scalar,0x1CB781,1,1,16,,10.0,,volvo2:solid,changed,,
+ELDOB,,scalar,0x1CB792,1,1,8,,10.0,,volvo2:solid,same,,
+FVMXLDRA,,scalar,0x1CB782,1,1,16,,0.0078125,,volvo2:solid,changed,,
+FVPDKLDL,,scalar,0x1CB783,1,1,16,,0.0078125,,volvo2:solid,changed,,
+FVPDKLDS,,scalar,0x1CB784,1,1,16,,0.0078125,,volvo2:solid,changed,,
+GWPLDOB,,scalar,0x1CB79B,1,1,8,,8.0,,volvo2:solid,same,,
+LDELDRAO,,scalar,0x1CB774,1,1,16,,0.0390625,,volvo2:solid,same,,
+LDELDRAO,,scalar,0x1CB774,1,1,16,,0.0390625,,volvo2:solid,same,,
+LDELDRAU,,scalar,0x1CB776,1,1,16,,0.0390625,,volvo2:solid,changed,,
+LKVDKNMN,,scalar,0x1CB785,1,1,16,,40.0,,volvo2:solid,changed,,
+PLGRUELDD,,scalar,0x1CB778,1,1,16,,0.0390625,,volvo2:solid,changed,,
+PUELD,,scalar,0x1CBD80,1,1,16,,0.0390625,,volvo2:solid,same,,
+PULDR,,scalar,0x1CB786,1,1,16,,5.0,,volvo2:solid,changed,,
+SRLLKH,,scalar,0x1CB787,1,1,16,,0.75,,volvo2:solid,changed,,
+SSRLKVDK,,scalar,0x1CB77A,1,1,16,,7.62939453125e-06,,volvo2:solid,changed,,
+TDLDEUK,,scalar,0x1CB788,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLDRA2,,scalar,0x1CB789,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLDRA2,,scalar,0x1CB789,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKH,,scalar,0x1CB78A,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKL,,scalar,0x1CB78B,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKL,,scalar,0x1CB78B,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKLL,,scalar,0x1CB78C,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKLL,,scalar,0x1CB78C,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKS,,scalar,0x1CB78D,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKS,,scalar,0x1CB78D,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKST,,scalar,0x1CB78E,1,1,16,,0.05,,volvo2:solid,changed,,
+TDLKVDKT,,scalar,0x1CB78F,1,1,16,,0.05,,volvo2:solid,changed,,
+TLDEUK,,scalar,0x1CB77C,1,1,16,,3276.8,,volvo2:solid,changed,,
+TPLGPLG,,scalar,0x1CB77E,1,1,16,,0.05,,volvo2:solid,changed,,
+TSTLDOBA,,scalar,0x1CB7E2,1,1,16,,1.0,,volvo2:solid,changed,,
+TULV1,,scalar,0x1CB790,1,1,16,,0.05,,volvo2:solid,changed,,
+TULV1,,scalar,0x1CB790,1,1,16,,0.05,,volvo2:solid,changed,,
+TULV3,,scalar,0x1CB791,1,1,16,,0.05,,volvo2:solid,changed,,
+TVLDOBSO,,scalar,0x1CB7E3,1,1,16,,0.05,,volvo2:solid,changed,,
+DLBTSGM,,scalar,0x1D0660,1,1,16,,0.000244140625,,volvo2:solid,changed,,
+DLBTSGMX,,scalar,0x1D0662,1,1,16,,0.000244140625,,volvo2:solid,changed,,
+DTBTS,,scalar,0x1D0664,1,1,16,,0.01953125,,volvo2:solid,changed,,
+DTWILABTS,,scalar,0x1D0666,1,1,16,,0.0234375,,volvo2:solid,changed,,
+DTWISBTS,,scalar,0x1D0668,1,1,16,,0.0234375,,volvo2:solid,changed,,
+TVLBTS,,scalar,0x1D065E,1,1,16,,0.1,,volvo2:solid,changed,,
+SZABMAX,,scalar,0x1C6CF2,1,1,16,,0.001,,volvo2:solid,same,,
+FUBAOF,,scalar,0x1C6CF0,1,1,16,,0.001,,volvo2:solid,changed,,
+CWKR,,scalar,0x1C7678,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRAPP,,scalar,0x1C7B33,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRNLR,,scalar,0x1C7679,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRNLR,,scalar,0x1C7679,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRSHIFT,,scalar,0x1C7B34,1,1,16,,1.0,,volvo2:solid,changed,,
+CWTIPIN,,scalar,0x1C767A,1,1,16,,1.0,,volvo2:solid,changed,,
+DKRUKD,,scalar,0x1C7B35,1,1,16,,40.0,,volvo2:solid,changed,,
+DYADMX,,scalar,0x1C7B3C,1,1,16,,0.75,,volvo2:solid,changed,,
+DYADS,,scalar,0x1C7B3D,1,1,16,,0.75,,volvo2:solid,changed,,
+DYAFVS,,scalar,0x1C7B3E,1,1,16,,0.75,,volvo2:solid,changed,,
+DYAMNV,,scalar,0x1C7B3F,1,1,16,,0.75,,volvo2:solid,changed,,
+DYAVF,,scalar,0x1C7B40,1,1,16,,1.0,,volvo2:solid,changed,,
+FKELDYA,,scalar,0x1C7B41,1,1,16,,0.0625,,volvo2:solid,changed,,
+KRALH,,scalar,0x1C7676,1,1,16,,0.0234375,,volvo2:solid,changed,,
+KRAN1,,scalar,0x1C767B,1,1,16,,40.0,,volvo2:solid,changed,,
+KRAN2,,scalar,0x1C767C,1,1,16,,40.0,,volvo2:solid,changed,,
+KRAN3,,scalar,0x1C767D,1,1,16,,40.0,,volvo2:solid,changed,,
+KRAN4,,scalar,0x1C767E,1,1,16,,40.0,,volvo2:solid,changed,,
+KRANH,,scalar,0x1C767F,1,1,16,,40.0,,volvo2:solid,changed,,
+KRANH,,scalar,0x1C767F,1,1,16,,40.0,,volvo2:solid,changed,,
+KRDWA,,scalar,0x1C7B39,1,1,16,,0.75,,volvo2:solid,changed,,
+KRDWKLA,,scalar,0x1C7B3A,1,1,16,,0.75,,volvo2:solid,changed,,
+KRDWSA,,scalar,0x1C7B3B,1,1,16,,0.75,,volvo2:solid,changed,,
+KRFHT,,scalar,0x1C7685,1,1,16,,1.0,,volvo2:solid,changed,,
+KRLMDY,,scalar,0x1C7683,1,1,16,,1.0,,volvo2:solid,changed,,
+KRNMDY,,scalar,0x1C7684,1,1,16,,1.0,,volvo2:solid,changed,,
+NKRFM1,,scalar,0x1C7B36,1,1,16,,40.0,,volvo2:solid,changed,,
+NKRFM2,,scalar,0x1C7B37,1,1,16,,40.0,,volvo2:solid,changed,,
+NKRFM3,,scalar,0x1C7B38,1,1,16,,40.0,,volvo2:solid,changed,,
+PZWKRA,,scalar,0x1C7B42,1,1,16,,0.390625,,volvo2:solid,changed,,
+TMDYNA,,scalar,0x1C7680,1,1,16,,0.75,,volvo2:solid,changed,,
+TMKR,,scalar,0x1C7681,1,1,16,,0.75,,volvo2:solid,changed,,
+TMKRA,,scalar,0x1C7682,1,1,16,,0.75,,volvo2:solid,changed,,
+CWKRINT,,scalar,0x1C7E12,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRREF,,scalar,0x1C7E13,1,1,16,,1.0,,volvo2:solid,changed,,
+CWKRVKR,,scalar,0x1C7E14,1,1,16,,1.0,,volvo2:solid,changed,,
+CWREFI,,scalar,0x1C7E15,1,1,16,,1.0,,volvo2:solid,changed,,
+FKEFMC,,scalar,0x1C7E16,1,1,16,,0.0625,,volvo2:solid,changed,,
+FKELDY,,scalar,0x1C7E17,1,1,16,,0.0625,,volvo2:solid,changed,,
+FKENDY,,scalar,0x1C7E18,1,1,16,,0.0625,,volvo2:solid,changed,,
+FKRFTPFMC,,scalar,0x1C7E19,1,1,16,,0.00390625,,volvo2:solid,changed,,
+KRFTP2,,scalar,0x1C7E1A,1,1,16,,1.0,,volvo2:solid,changed,,
+KRFTP3,,scalar,0x1C7E1B,1,1,16,,1.0,,volvo2:solid,changed,,
+KRKFKS,,scalar,0x1C7E1C,1,1,16,,1.0,,volvo2:solid,changed,,
+KRRKRGKL,,scalar,0x1C7E1D,1,1,16,,0.0625,,volvo2:solid,changed,,
+KRUMOB,,scalar,0x1C7E0C,1,1,16,,7.62939453125e-05,,volvo2:solid,changed,,
+KRUMUNT,,scalar,0x1C7E0E,1,1,16,,7.62939453125e-05,,volvo2:solid,changed,,
+KRVST,,scalar,0x1C7E1E,1,1,16,,1.0,,volvo2:solid,changed,,
+MINAKRLZ,,scalar,0x1C7E38,1,1,16,,1.0,,volvo2:solid,changed,,
+REFINI,,scalar,0x1C7E10,1,1,16,,7.62939453125e-05,,volvo2:solid,changed,,
+WKRLZOFEKS,,scalar,0x1C7E39,1,1,16,,0.75,,volvo2:solid,changed,,
+ZYRKR,,scalar,0x1C7E1F,1,1,16,,1.0,,volvo2:solid,changed,,
+KPREGDS,,scalar,0x1D27B4,1,1,16,,0.0059604644775390625,,volvo2:solid,changed,,
+KRKATE,,scalar,0x1D27B6,1,1,16,,1.0416666666666666e-05,,volvo2:solid,changed,,
+KRKATE,,scalar,0x1D27B6,1,1,16,,1.0,,volvo2:solid,same,,
+PSAPES,,scalar,0x1D27B8,1,1,16,,0.0390625,,volvo2:solid,same,,
+ZTSPEV,,scalar,0x1D27DC,1,1,16,,6553.6,,volvo2:solid,changed,,
+ZUPND2,,scalar,0x1D27DE,1,1,16,,3276.8,,volvo2:solid,changed,,
+DWEEAMX,,scalar,0x1C6B10,1,1,16,,6.0,,volvo2:solid,changed,,
+DWEEMX,,scalar,0x1C6B11,1,1,16,,6.0,,volvo2:solid,changed,,
+MIFAAPP,application value for MIFA_w,scalar,0x1C92A0,1,1,16,,0.00152587890625,%,interpolated-unverified,same,,
+MIFABGMX,maximum value mifa_w for limitation of torque change,scalar,0x1C92A2,1,1,16,,0.00152587890625,%,interpolated-unverified,same,,
+MIFALAPP,application value for MIFAL_w,scalar,0x1C92A4,1,1,16,,0.00152587890625,%,interpolated-unverified,same,,
+MKMIFABG,clutch torque to activate the torque change limitation,scalar,0x1C92A6,1,1,16,,0.0030517578125,%,interpolated-unverified,same,,
+MRFALLO,Upper threshold of relative torque for idle detection,scalar,0x1C92A8,1,1,16,,0.0030517578125,%,interpolated-unverified,same,,
+MRFALLU,Lower threshold of relative torque for idle detection,scalar,0x1C92AA,1,1,16,,0.0030517578125,%,interpolated-unverified,same,,
+NGFSAWE,Threshold engine speed gradient for disabling filter for transition fuel cut-off,scalar,0x1C92AC,1,1,16,,0.39063,1/min/s,interpolated-unverified,same,,
+TDASHTIP,Delay time of end of start condition for tip-in dashpot,scalar,0x1C92C0,1,1,16,,0.01,s,interpolated-unverified,same,,
+TVFSAWE,Time delay until resetting of B_fil,scalar,0x1C92F6,1,1,16,,0.01,s,interpolated-unverified,same,,
+SRKTEVS,Manifoild time constant when closing the canister purge valve,scalar,0x1C98CE,1,1,8,,0.02,s,interpolated-unverified,same,,
+TVLLRPST,delay to disable proportional parameter in start,scalar,0x1C98D0,1,1,8,,0.2,s,interpolated-unverified,same,,
+ZFLLRPL,time constant: steering up the propotional controller on the air-path,scalar,0x1C98D2,1,1,8,,1.0,s,interpolated-unverified,same,,
+ZLIBG,filter time constant for adjusting integrator limits,scalar,0x1C98D4,1,1,8,,1.0,s,interpolated-unverified,same,,
+TVPKH,delay: proportional parameter for kathalyst-heating,scalar,0x1C9970,1,1,16,,0.2,s,interpolated-unverified,same,,
+FNRAD,Factor between wheel speed and vehicle speed f(circumference),scalar,0x1C9984,1,1,8,,0.0625,-,interpolated-unverified,same,,
+TMISTMN_UM,minimal engine temperature for actual torque calculation in Monitoring,scalar,0x1CA618,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T2_UM,After-start monitoring time 2 for the watchdog function,scalar,0x1CA61A,1,1,16,,0.04,s,interpolated-unverified,same,,
+MVER_T_UM,Fault time for moment comparison in function monitoring,scalar,0x1CA61C,1,1,8,,40.0,ms,interpolated-unverified,same,,
+MZFTV_UM,Delay time for permissible torque mz_um in function monitoring,scalar,0x1CA61E,1,1,8,,40.0,ms,interpolated-unverified,same,,
+TMOMIN_UM,minimal plausible engine temperature,scalar,0x1CA84A,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMMKH_UM,Time after start for higher permitted torque during Kat-heating,scalar,0x1CA854,1,1,16,,0.04,s,interpolated-unverified,same,,
+NC_T_UM,Fault tolerance time for engine speed monitoring in function monitoring,scalar,0x1CA856,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NDIFFU_UM,lower permissible difference between nmot and nseg_um in function monitoring,scalar,0x1CA858,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NTSCHW_UM,,scalar,0x1CA864,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TSEGMIN_UM,Min. segment time in the engine speed calc. with segment times in the FU,scalar,0x1CA866,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+NSOF_T_UM,Debouncing time for the switch-off of the after-start expansion,scalar,0x1CA868,1,1,8,,40.0,ms,interpolated-unverified,same,,
+N_STEND_UM,Engine speed threshold for end of start in the watchdog function,scalar,0x1CA86A,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNSMN_UM,Engine temp. threshold for the after-start expansion in the watchdog function,scalar,0x1CA86C,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T_UM,After-start monitoring time for the watchdog function,scalar,0x1CA86E,1,1,16,,0.04,s,interpolated-unverified,same,,
+NSKAZO_UM,engine speed offset for ignition off at fuel cut off in function monitoring,scalar,0x1CA882,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+REAC_T3_UM,Fault time for checking ignition cut off in the fault reaction monitoring,scalar,0x1CA884,1,1,8,,40.0,ms,interpolated-unverified,same,,
+IP2A_MN_UM,Min. voltage for DK actual value pot. 2 at lower limit for function monitoring,scalar,0x1CA886,1,1,8,,0.01953125,V,interpolated-unverified,same,,
+NRLIP_UM,Engine speed threshold for the rl/rlip comparison in function monitoring,scalar,0x1CA8DA,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+RLIPFIL_UM,Filter time constant for delayed load information rlipf_um in function monitor.,scalar,0x1CA8DC,1,1,8,,1.0,ms,interpolated-unverified,same,,
+RLIP_T_UM,Fault tolerance time for the rl/rlip comparison in function monitoring,scalar,0x1CA8DE,1,1,8,,40.0,ms,interpolated-unverified,same,,
+RL_BO_UM,Offset for tolerance straight line f(rl_um) for rlipf_um in function monitoring,scalar,0x1CA8E8,1,1,8,,0.75,%,interpolated-unverified,changed,,
+APM12LL_UM,maximum difference between both APM-signals below full load,scalar,0x1CA8EA,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+APMMIN_UM,Pedal idling gas limit for function monitoring,scalar,0x1CA8EC,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+SPSC_T_UM,Fault time for nominal values in func. monitor. which are mutually not plaus.,scalar,0x1CA8F0,1,1,8,,10.0,ms,interpolated-unverified,same,,
+TMISTMN_UM,minimal engine temperature for actual torque calculation in Monitoring,scalar,0x1CA602,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T2_UM,After-start monitoring time 2 for the watchdog function,scalar,0x1CA604,1,1,16,,0.04,s,interpolated-unverified,same,,
+MVER_T_UM,Fault time for moment comparison in function monitoring,scalar,0x1CA606,1,1,8,,40.0,ms,interpolated-unverified,same,,
+MZFTV_UM,Delay time for permissible torque mz_um in function monitoring,scalar,0x1CA608,1,1,8,,40.0,ms,interpolated-unverified,same,,
+TMOMIN_UM,minimal plausible engine temperature,scalar,0x1CA834,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMMKH_UM,Time after start for higher permitted torque during Kat-heating,scalar,0x1CA83E,1,1,16,,0.04,s,interpolated-unverified,same,,
+NC_T_UM,Fault tolerance time for engine speed monitoring in function monitoring,scalar,0x1CA840,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NDIFFU_UM,lower permissible difference between nmot and nseg_um in function monitoring,scalar,0x1CA842,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NTSCHW_UM,,scalar,0x1CA84E,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TSEGMIN_UM,Min. segment time in the engine speed calc. with segment times in the FU,scalar,0x1CA850,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+NSOF_T_UM,Debouncing time for the switch-off of the after-start expansion,scalar,0x1CA852,1,1,8,,40.0,ms,interpolated-unverified,same,,
+N_STEND_UM,Engine speed threshold for end of start in the watchdog function,scalar,0x1CA854,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNSMN_UM,Engine temp. threshold for the after-start expansion in the watchdog function,scalar,0x1CA856,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T_UM,After-start monitoring time for the watchdog function,scalar,0x1CA858,1,1,16,,0.04,s,interpolated-unverified,same,,
+NSKAZO_UM,engine speed offset for ignition off at fuel cut off in function monitoring,scalar,0x1CA86C,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+REAC_T3_UM,Fault time for checking ignition cut off in the fault reaction monitoring,scalar,0x1CA86E,1,1,8,,40.0,ms,interpolated-unverified,same,,
+IP2A_MN_UM,Min. voltage for DK actual value pot. 2 at lower limit for function monitoring,scalar,0x1CA870,1,1,8,,0.01953125,V,interpolated-unverified,same,,
+NRLIP_UM,Engine speed threshold for the rl/rlip comparison in function monitoring,scalar,0x1CA8C4,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+RLIPFIL_UM,Filter time constant for delayed load information rlipf_um in function monitor.,scalar,0x1CA8C6,1,1,8,,1.0,ms,interpolated-unverified,changed,,
+RLIP_T_UM,Fault tolerance time for the rl/rlip comparison in function monitoring,scalar,0x1CA8C8,1,1,8,,40.0,ms,interpolated-unverified,same,,
+RL_BO_UM,Offset for tolerance straight line f(rl_um) for rlipf_um in function monitoring,scalar,0x1CA8D2,1,1,8,,0.75,%,interpolated-unverified,changed,,
+APM12LL_UM,maximum difference between both APM-signals below full load,scalar,0x1CA8D4,1,1,8,,0.39215686274509803,%,interpolated-unverified,changed,,
+APMMIN_UM,Pedal idling gas limit for function monitoring,scalar,0x1CA8D6,1,1,8,,0.39215686274509803,%,interpolated-unverified,changed,,
+SPSC_T_UM,Fault time for nominal values in func. monitor. which are mutually not plaus.,scalar,0x1CA8DA,1,1,8,,10.0,ms,interpolated-unverified,same,,
+TDALTRR,Time after start for LoadResponseRamp time calculation,scalar,0x1CABC0,1,1,16,,0.01,s,interpolated-unverified,same,,
+TDALTRUN,Time for shut off alternator after start,scalar,0x1CABC2,1,1,16,,0.01,s,interpolated-unverified,same,,
+TDDISRCVR,"Time, how long the reduced charge voltage request is disabled",scalar,0x1CABC4,1,1,16,,0.05,s,interpolated-unverified,same,,
+TDISSTL,Time to disable alternator load request from KFSTLOAD,scalar,0x1CABC6,1,1,16,,0.01,s,interpolated-unverified,same,,
+TDRCVR,"Time, how long the reduced charge voltage request lasts",scalar,0x1CABC8,1,1,16,,0.05,s,interpolated-unverified,same,,
+TDRCVRS,Min. period threshold between two requests for alternator load reduction,scalar,0x1CABCA,1,1,16,,0.05,s,interpolated-unverified,same,,
+TEXCDCFIL,time constant when filtering excitaion duty-cycle,scalar,0x1CABCC,1,1,16,,1.0,s,interpolated-unverified,same,,
+TEXCIFIL,time constant when filtering excitation current,scalar,0x1CABCE,1,1,16,,1.0,s,interpolated-unverified,same,,
+TSIGDEB,Debouncing time for Signal-Error for Me9-Volvo,scalar,0x1CABD0,1,1,16,,0.05,s,interpolated-unverified,same,,
+ALTERRDEB,Debouncing time for alternator error calulation - For ME9 Volvo,scalar,0x1CABD2,1,1,8,,0.05,s,interpolated-unverified,same,,
+ALTTRQLM,Alternator torque limit,scalar,0x1CABD4,1,1,8,,0.5,Nm,interpolated-unverified,same,,
+ERACGENI,Set value for alternator actual current during alternator error,scalar,0x1CABD6,1,1,8,,1.0,A,interpolated-unverified,same,,
+ERAVGENILL,Set value for alternator available 12V idle current during alternator error,scalar,0x1CABD8,1,1,8,,1.0,A,interpolated-unverified,same,,
+FTRQVST,Factor to convert torque limit to voltage set point,scalar,0x1CABDA,1,1,8,,0.01,V/Nm,interpolated-unverified,same,,
+LDINCTHR,Excitation duty-cycle gradient threshold for step up in electrical load,scalar,0x1CABDC,1,1,8,,0.390625,%,interpolated-unverified,same,,
+VMNACM,Vehicle speed threshold for reduce charge voltage request,scalar,0x1CABE0,1,1,8,,1.25,km/h,interpolated-unverified,same,,
+VOLTSPMX,Maximum limit for voltage setpoint,scalar,0x1CABE2,1,1,8,,0.1,V,interpolated-unverified,same,,
+ALTSTMOT,Threshold for switching calculation of underhood temperature by engine temperatu,scalar,0x1CABE4,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+DUBRVSPT,Delta between ECU-voltage and alternator voltage setpoint for reducing the volta,scalar,0x1CABE6,1,1,8,,0.1,V,interpolated-unverified,same,,
+FALTVBMAX,Limit for alternator voltage setpoint given by battery temperature,scalar,0x1CABE8,1,1,8,,0.1,V,interpolated-unverified,same,,
+TMOMIN_UM,minimal plausible engine temperature,scalar,0x1CA756,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMMKH_UM,Time after start for higher permitted torque during Kat-heating,scalar,0x1CA760,1,1,16,,0.04,s,interpolated-unverified,same,,
+NC_T_UM,Fault tolerance time for engine speed monitoring in function monitoring,scalar,0x1CA762,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NDIFFU_UM,lower permissible difference between nmot and nseg_um in function monitoring,scalar,0x1CA764,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NTSCHW_UM,,scalar,0x1CA770,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TSEGMIN_UM,Min. segment time in the engine speed calc. with segment times in the FU,scalar,0x1CA772,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+NSOF_T_UM,Debouncing time for the switch-off of the after-start expansion,scalar,0x1CA774,1,1,8,,40.0,ms,interpolated-unverified,changed,,
+N_STEND_UM,Engine speed threshold for end of start in the watchdog function,scalar,0x1CA776,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNSMN_UM,Engine temp. threshold for the after-start expansion in the watchdog function,scalar,0x1CA778,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T_UM,After-start monitoring time for the watchdog function,scalar,0x1CA77A,1,1,16,,0.04,s,interpolated-unverified,same,,
+NSKAZO_UM,engine speed offset for ignition off at fuel cut off in function monitoring,scalar,0x1CA78E,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+REAC_T3_UM,Fault time for checking ignition cut off in the fault reaction monitoring,scalar,0x1CA790,1,1,8,,40.0,ms,interpolated-unverified,same,,
+IP2A_MN_UM,Min. voltage for DK actual value pot. 2 at lower limit for function monitoring,scalar,0x1CA792,1,1,8,,0.01953125,V,interpolated-unverified,same,,
+NRLIP_UM,Engine speed threshold for the rl/rlip comparison in function monitoring,scalar,0x1CA7E6,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+RLIPFIL_UM,Filter time constant for delayed load information rlipf_um in function monitor.,scalar,0x1CA7E8,1,1,8,,1.0,ms,interpolated-unverified,same,,
+RLIP_T_UM,Fault tolerance time for the rl/rlip comparison in function monitoring,scalar,0x1CA7EA,1,1,8,,40.0,ms,interpolated-unverified,same,,
+RL_BO_UM,Offset for tolerance straight line f(rl_um) for rlipf_um in function monitoring,scalar,0x1CA7F4,1,1,8,,0.75,%,interpolated-unverified,same,,
+APM12LL_UM,maximum difference between both APM-signals below full load,scalar,0x1CA7F6,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+APMMIN_UM,Pedal idling gas limit for function monitoring,scalar,0x1CA7F8,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+SPSC_T_UM,Fault time for nominal values in func. monitor. which are mutually not plaus.,scalar,0x1CA7FC,1,1,8,,10.0,ms,interpolated-unverified,same,,
+ADCC_MX_UM,Max. ADC-value for ADC-channel shifted towards low at the ADC-test,scalar,0x1CA84C,1,1,8,,0.009765625,V,interpolated-unverified,same,,
+ADCQ_T_UM,Error time for defect ADC-queue in the queue monitoring,scalar,0x1CA84E,1,1,8,,10.0,ms,interpolated-unverified,same,,
+AUSGH_T_UM,fault healing threshold for cyclic RAM check in monitoring function,scalar,0x1CA858,1,1,8,,40.0,ms,interpolated-unverified,same,,
+AUSZH_T_UM,fault healing threshold for cyclic ROM check in monitoring function,scalar,0x1CA85A,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NZMAX_UM,Max. engine speed from tooth counter calc. at missing synchro in the FU,scalar,0x1CA868,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TDIFMX_UM,Max. deviation of the sum of time differences betw. TPU and CPU in the FU,scalar,0x1CA870,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+TMOMIN_UM,minimal plausible engine temperature,scalar,0x1CA748,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMMKH_UM,Time after start for higher permitted torque during Kat-heating,scalar,0x1CA752,1,1,16,,0.04,s,interpolated-unverified,same,,
+NC_T_UM,Fault tolerance time for engine speed monitoring in function monitoring,scalar,0x1CA754,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NDIFFU_UM,lower permissible difference between nmot and nseg_um in function monitoring,scalar,0x1CA756,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NTSCHW_UM,,scalar,0x1CA762,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TSEGMIN_UM,Min. segment time in the engine speed calc. with segment times in the FU,scalar,0x1CA764,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+NSOF_T_UM,Debouncing time for the switch-off of the after-start expansion,scalar,0x1CA766,1,1,8,,40.0,ms,interpolated-unverified,same,,
+N_STEND_UM,Engine speed threshold for end of start in the watchdog function,scalar,0x1CA768,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNSMN_UM,Engine temp. threshold for the after-start expansion in the watchdog function,scalar,0x1CA76A,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T_UM,After-start monitoring time for the watchdog function,scalar,0x1CA76C,1,1,16,,0.04,s,interpolated-unverified,same,,
+NSKAZO_UM,engine speed offset for ignition off at fuel cut off in function monitoring,scalar,0x1CA780,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+REAC_T3_UM,Fault time for checking ignition cut off in the fault reaction monitoring,scalar,0x1CA782,1,1,8,,40.0,ms,interpolated-unverified,same,,
+IP2A_MN_UM,Min. voltage for DK actual value pot. 2 at lower limit for function monitoring,scalar,0x1CA784,1,1,8,,0.01953125,V,interpolated-unverified,same,,
+NRLIP_UM,Engine speed threshold for the rl/rlip comparison in function monitoring,scalar,0x1CA7D8,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+RLIPFIL_UM,Filter time constant for delayed load information rlipf_um in function monitor.,scalar,0x1CA7DA,1,1,8,,1.0,ms,interpolated-unverified,same,,
+RLIP_T_UM,Fault tolerance time for the rl/rlip comparison in function monitoring,scalar,0x1CA7DC,1,1,8,,40.0,ms,interpolated-unverified,same,,
+RL_BO_UM,Offset for tolerance straight line f(rl_um) for rlipf_um in function monitoring,scalar,0x1CA7E6,1,1,8,,0.75,%,interpolated-unverified,same,,
+APM12LL_UM,maximum difference between both APM-signals below full load,scalar,0x1CA7E8,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+APMMIN_UM,Pedal idling gas limit for function monitoring,scalar,0x1CA7EA,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+SPSC_T_UM,Fault time for nominal values in func. monitor. which are mutually not plaus.,scalar,0x1CA7EE,1,1,8,,10.0,ms,interpolated-unverified,same,,
+ADCC_MX_UM,Max. ADC-value for ADC-channel shifted towards low at the ADC-test,scalar,0x1CA83E,1,1,8,,0.009765625,V,interpolated-unverified,same,,
+ADCQ_T_UM,Error time for defect ADC-queue in the queue monitoring,scalar,0x1CA840,1,1,8,,10.0,ms,interpolated-unverified,same,,
+AUSGH_T_UM,fault healing threshold for cyclic RAM check in monitoring function,scalar,0x1CA84A,1,1,8,,40.0,ms,interpolated-unverified,same,,
+AUSZH_T_UM,fault healing threshold for cyclic ROM check in monitoring function,scalar,0x1CA84C,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NZMAX_UM,Max. engine speed from tooth counter calc. at missing synchro in the FU,scalar,0x1CA85A,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TDIFMX_UM,Max. deviation of the sum of time differences betw. TPU and CPU in the FU,scalar,0x1CA862,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+TMOMIN_UM,minimal plausible engine temperature,scalar,0x1CA748,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMMKH_UM,Time after start for higher permitted torque during Kat-heating,scalar,0x1CA752,1,1,16,,0.04,s,interpolated-unverified,same,,
+NC_T_UM,Fault tolerance time for engine speed monitoring in function monitoring,scalar,0x1CA754,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NDIFFU_UM,lower permissible difference between nmot and nseg_um in function monitoring,scalar,0x1CA756,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NTSCHW_UM,,scalar,0x1CA762,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TSEGMIN_UM,Min. segment time in the engine speed calc. with segment times in the FU,scalar,0x1CA764,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+NSOF_T_UM,Debouncing time for the switch-off of the after-start expansion,scalar,0x1CA766,1,1,8,,40.0,ms,interpolated-unverified,same,,
+N_STEND_UM,Engine speed threshold for end of start in the watchdog function,scalar,0x1CA768,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNSMN_UM,Engine temp. threshold for the after-start expansion in the watchdog function,scalar,0x1CA76A,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+NSC_T_UM,After-start monitoring time for the watchdog function,scalar,0x1CA76C,1,1,16,,0.04,s,interpolated-unverified,same,,
+NSKAZO_UM,engine speed offset for ignition off at fuel cut off in function monitoring,scalar,0x1CA780,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+REAC_T3_UM,Fault time for checking ignition cut off in the fault reaction monitoring,scalar,0x1CA782,1,1,8,,40.0,ms,interpolated-unverified,same,,
+IP2A_MN_UM,Min. voltage for DK actual value pot. 2 at lower limit for function monitoring,scalar,0x1CA784,1,1,8,,0.01953125,V,interpolated-unverified,same,,
+NRLIP_UM,Engine speed threshold for the rl/rlip comparison in function monitoring,scalar,0x1CA7D8,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+RLIPFIL_UM,Filter time constant for delayed load information rlipf_um in function monitor.,scalar,0x1CA7DA,1,1,8,,1.0,ms,interpolated-unverified,same,,
+RLIP_T_UM,Fault tolerance time for the rl/rlip comparison in function monitoring,scalar,0x1CA7DC,1,1,8,,40.0,ms,interpolated-unverified,same,,
+RL_BO_UM,Offset for tolerance straight line f(rl_um) for rlipf_um in function monitoring,scalar,0x1CA7E6,1,1,8,,0.75,%,interpolated-unverified,same,,
+APM12LL_UM,maximum difference between both APM-signals below full load,scalar,0x1CA7E8,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+APMMIN_UM,Pedal idling gas limit for function monitoring,scalar,0x1CA7EA,1,1,8,,0.39215686274509803,%,interpolated-unverified,same,,
+SPSC_T_UM,Fault time for nominal values in func. monitor. which are mutually not plaus.,scalar,0x1CA7EE,1,1,8,,10.0,ms,interpolated-unverified,same,,
+ADCC_MX_UM,Max. ADC-value for ADC-channel shifted towards low at the ADC-test,scalar,0x1CA83E,1,1,8,,0.009765625,V,interpolated-unverified,same,,
+ADCQ_T_UM,Error time for defect ADC-queue in the queue monitoring,scalar,0x1CA840,1,1,8,,10.0,ms,interpolated-unverified,same,,
+AUSGH_T_UM,fault healing threshold for cyclic RAM check in monitoring function,scalar,0x1CA84A,1,1,8,,40.0,ms,interpolated-unverified,same,,
+AUSZH_T_UM,fault healing threshold for cyclic ROM check in monitoring function,scalar,0x1CA84C,1,1,8,,40.0,ms,interpolated-unverified,same,,
+NZMAX_UM,Max. engine speed from tooth counter calc. at missing synchro in the FU,scalar,0x1CA85A,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TDIFMX_UM,Max. deviation of the sum of time differences betw. TPU and CPU in the FU,scalar,0x1CA862,1,1,16,,0.0004,ms,interpolated-unverified,same,,
+LDELDRAO,upper limit for low pass filtered boost control deviation,scalar,0x1CB774,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+LDELDRAO,upper limit for low pass filtered boost control deviation,scalar,0x1CB774,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+LDELDRAU,lower threshold for healing of E_ldra through ldeldra_w,scalar,0x1CB776,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PLGRUELDD,backup value of basic boost pressure for LDR-diagnosis,scalar,0x1CB778,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+SSRLKVDK,Threshold: purge rate can. purging for activating the leakage detec. diag. turbo,scalar,0x1CB77A,1,1,16,,7.62939453125e-06,-,interpolated-unverified,same,,
+TLDEUK,time constant low pass filter for boost control deviation,scalar,0x1CB77C,1,1,16,,1.0,s,interpolated-unverified,same,,
+TPLGPLG,Threshold of time for calculation of ldeldra,scalar,0x1CB77E,1,1,16,,0.05,s,interpolated-unverified,same,,
+DLUL,delta-load for overload protection-reset,scalar,0x1CB780,1,1,8,,5.0,hPa,interpolated-unverified,same,,
+DLUL,delta-load for overload protection-reset,scalar,0x1CB780,1,1,8,,5.0,hPa,interpolated-unverified,same,,
+FVMXLDRA,weighting factor for max. permissible pressure ratio to trigger B_mxldra,scalar,0x1CB782,1,1,8,,0.0078125,-,interpolated-unverified,same,,
+FVPDKLDS,weighting factor for min. permissible pressure ratio to trigger E_lkvdk,scalar,0x1CB784,1,1,8,,0.0078125,-,interpolated-unverified,same,,
+PULDR,threshold ambient pressur for boost pressure diagnosis,scalar,0x1CB786,1,1,8,,5.0,hPa,interpolated-unverified,same,,
+TDLDEUK,time for low pass filter from boost pressure deviation,scalar,0x1CB788,1,1,8,,0.05,s,interpolated-unverified,same,,
+TDLKVDKH,time delay for clearing of E_lkvdk,scalar,0x1CB78A,1,1,8,,0.05,s,interpolated-unverified,same,,
+TDLKVDKLL,"Time delay for setting E_lkdvk at aspirated operation, lower threshold",scalar,0x1CB78C,1,1,8,,0.05,s,interpolated-unverified,same,,
+TDLKVDKLL,"Time delay for setting E_lkdvk at aspirated operation, lower threshold",scalar,0x1CB78C,1,1,8,,0.05,s,interpolated-unverified,same,,
+TDLKVDKST,Time delay for setting E_lkvdk after start end,scalar,0x1CB78E,1,1,8,,0.05,s,interpolated-unverified,same,,
+TULV1,"delay overcharge cutoff, ti fade out step 1",scalar,0x1CB790,1,1,8,,0.05,s,interpolated-unverified,same,,
+TULV1,"delay overcharge cutoff, ti fade out step 1",scalar,0x1CB790,1,1,8,,0.05,s,interpolated-unverified,same,,
+ELDOB,error signal threshold for start time counter overboost avtive,scalar,0x1CB792,1,1,8,,10.0,hPa,interpolated-unverified,same,,
+TSTLDOBA,Maximum time until start active time Overboost,scalar,0x1CB7E2,1,1,8,,1.0,s,interpolated-unverified,same,,
+PUELD,backup value for ambient pressur for boost pressure control,scalar,0x1CBD80,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PUELD,backup value for ambient pressur for boost pressure control,scalar,0x1CBD80,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PUELD,backup value for ambient pressur for boost pressure control,scalar,0x1CBD80,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PUELD,backup value for ambient pressur for boost pressure control,scalar,0x1CBD80,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+KISRM,integrator speed constant for intake manifold model,scalar,0x1CC704,1,1,16,,1.52587890625e-05,-,interpolated-unverified,same,,
+PBRINTMN,partial pressure residual gas in chamber minimum,scalar,0x1CC728,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PBRINTMN,partial pressure residual gas in chamber minimum,scalar,0x1CC728,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PBRINTMX,partial pressure residual gas in chamber maximum,scalar,0x1CC72A,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+PBRINTMX,partial pressure residual gas in chamber maximum,scalar,0x1CC72A,1,1,16,,0.0390625,hPa,interpolated-unverified,same,,
+ZBRT,time constant for combustion chamber temp. model,scalar,0x1CC8F6,1,1,16,,1.0,s,interpolated-unverified,same,,
+TVFRG,Delay time after end of start until charge controller is enabled,scalar,0x1CCC60,1,1,16,,0.01,s,interpolated-unverified,same,,
+TFWDKSOM,time constant for filtering desired throttle angle at kl15 off,scalar,0x1CCD00,1,1,16,,1.0,s,interpolated-unverified,same,,
+DWNWSVAS,Delta-desired angle outlet valve closed in locking position relative to TDC,scalar,0x1CCD6A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+DWNWSVEO,Delta-desired angle inlet valve opened in locking position relative to TDC,scalar,0x1CCD6C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TMXVDNWVP,Delay time after end of start to dissable diagnosis camshaft control DNWVPx,scalar,0x1CCD6E,1,1,16,,0.01,s,interpolated-unverified,same,,
+TOELDNWAMN,Min oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD70,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+TOELDNWAMX,Max oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD72,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMN,Min oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD74,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+TOELDNWEMX,Max oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD76,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+NDNWMX,maximum engine speed for diagnosis camshaft control,scalar,0x1CCD78,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+TMDNWAMX,Max engine temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD7A,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+TMDNWEMX,Max engine temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD7C,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+HYNWNMOT,Camshaft Speed hysteresis for the avoidance of nmot fluctuations,scalar,0x1CCD80,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NNWMX,max. speed threshold for switch off camshaft closed loop control,scalar,0x1CCD82,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNWKH,Temperature threshold f. release of NW-cat.heat. functionality,scalar,0x1CCD84,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMNWMX,max engine temperature threshold to enable camshaft control,scalar,0x1CCD86,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TVNWGE,Delay time until switchover enable following transmission intervention,scalar,0x1CCD88,1,1,8,,0.05,s,interpolated-unverified,same,,
+THYNWMN,Temperature hysteresis for the avoidance of tmot and toelk fluctuations,scalar,0x1CCDAC,1,1,16,,0.0234375,K,interpolated-unverified,same,,
+TOELNWEMN,Min. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDAE,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWEMX,Max. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDB0,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMN,Min. threshold of oil temperature to enable camshaft control,scalar,0x1CCDB2,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMX,Max. threshold of oil temperature to enable camshaft control,scalar,0x1CCDB4,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+HYNMOTNW,Hysteresis f. nmot_w f. characteristic map addressing,scalar,0x1CCDD6,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TVFRG,Delay time after end of start until charge controller is enabled,scalar,0x1CCC5C,1,1,16,,0.01,s,interpolated-unverified,same,,
+TFWDKSOM,time constant for filtering desired throttle angle at kl15 off,scalar,0x1CCCFC,1,1,16,,1.0,s,interpolated-unverified,same,,
+DWNWSVAS,Delta-desired angle outlet valve closed in locking position relative to TDC,scalar,0x1CCD66,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+DWNWSVEO,Delta-desired angle inlet valve opened in locking position relative to TDC,scalar,0x1CCD68,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TMXVDNWVP,Delay time after end of start to dissable diagnosis camshaft control DNWVPx,scalar,0x1CCD6A,1,1,16,,0.01,s,interpolated-unverified,same,,
+TOELDNWAMN,Min oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD6C,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWAMX,Max oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD6E,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMN,Min oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD70,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+TOELDNWEMX,Max oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD72,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+NDNWMX,maximum engine speed for diagnosis camshaft control,scalar,0x1CCD74,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+TMDNWAMX,Max engine temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD76,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+TMDNWEMX,Max engine temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD78,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+HYNWNMOT,Camshaft Speed hysteresis for the avoidance of nmot fluctuations,scalar,0x1CCD7C,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+NNWMX,max. speed threshold for switch off camshaft closed loop control,scalar,0x1CCD7E,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNWKH,Temperature threshold f. release of NW-cat.heat. functionality,scalar,0x1CCD80,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMNWMX,max engine temperature threshold to enable camshaft control,scalar,0x1CCD82,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TVNWGE,Delay time until switchover enable following transmission intervention,scalar,0x1CCD84,1,1,8,,0.05,s,interpolated-unverified,same,,
+THYNWMN,Temperature hysteresis for the avoidance of tmot and toelk fluctuations,scalar,0x1CCDA8,1,1,16,,0.0234375,K,interpolated-unverified,same,,
+TOELNWEMN,Min. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDAA,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWEMX,Max. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDAC,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMN,Min. threshold of oil temperature to enable camshaft control,scalar,0x1CCDAE,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMX,Max. threshold of oil temperature to enable camshaft control,scalar,0x1CCDB0,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+HYNMOTNW,Hysteresis f. nmot_w f. characteristic map addressing,scalar,0x1CCDD2,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TVFRG,Delay time after end of start until charge controller is enabled,scalar,0x1CCC5A,1,1,16,,0.01,s,interpolated-unverified,same,,
+TFWDKSOM,time constant for filtering desired throttle angle at kl15 off,scalar,0x1CCCFA,1,1,16,,1.0,s,interpolated-unverified,same,,
+DWNWSVAS,Delta-desired angle outlet valve closed in locking position relative to TDC,scalar,0x1CCD64,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+DWNWSVEO,Delta-desired angle inlet valve opened in locking position relative to TDC,scalar,0x1CCD66,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TMXVDNWVP,Delay time after end of start to dissable diagnosis camshaft control DNWVPx,scalar,0x1CCD68,1,1,16,,0.01,s,interpolated-unverified,same,,
+TOELDNWAMN,Min oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD6A,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWAMX,Max oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD6C,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMN,Min oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD6E,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMX,Max oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD70,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+NDNWMX,maximum engine speed for diagnosis camshaft control,scalar,0x1CCD72,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMDNWAMX,Max engine temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD74,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+TMDNWEMX,Max engine temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD76,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+HYNWNMOT,Camshaft Speed hysteresis for the avoidance of nmot fluctuations,scalar,0x1CCD7A,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+NNWMX,max. speed threshold for switch off camshaft closed loop control,scalar,0x1CCD7C,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+TMNWKH,Temperature threshold f. release of NW-cat.heat. functionality,scalar,0x1CCD7E,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMNWMX,max engine temperature threshold to enable camshaft control,scalar,0x1CCD80,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TVNWGE,Delay time until switchover enable following transmission intervention,scalar,0x1CCD82,1,1,8,,0.05,s,interpolated-unverified,same,,
+THYNWMN,Temperature hysteresis for the avoidance of tmot and toelk fluctuations,scalar,0x1CCDA6,1,1,16,,0.0234375,K,interpolated-unverified,same,,
+TOELNWEMN,Min. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDA8,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWEMX,Max. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDAA,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMN,Min. threshold of oil temperature to enable camshaft control,scalar,0x1CCDAC,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMX,Max. threshold of oil temperature to enable camshaft control,scalar,0x1CCDAE,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+HYNMOTNW,Hysteresis f. nmot_w f. characteristic map addressing,scalar,0x1CCDD0,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TVFRG,Delay time after end of start until charge controller is enabled,scalar,0x1CCC58,1,1,16,,0.01,s,interpolated-unverified,same,,
+TFWDKSOM,time constant for filtering desired throttle angle at kl15 off,scalar,0x1CCCF8,1,1,16,,1.0,s,interpolated-unverified,same,,
+DWNWSVAS,Delta-desired angle outlet valve closed in locking position relative to TDC,scalar,0x1CCD62,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+DWNWSVEO,Delta-desired angle inlet valve opened in locking position relative to TDC,scalar,0x1CCD64,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TMXVDNWVP,Delay time after end of start to dissable diagnosis camshaft control DNWVPx,scalar,0x1CCD66,1,1,16,,0.01,s,interpolated-unverified,same,,
+TOELDNWAMN,Min oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD68,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWAMX,Max oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD6A,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMN,Min oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD6C,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMX,Max oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD6E,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+NDNWMX,maximum engine speed for diagnosis camshaft control,scalar,0x1CCD70,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+TMDNWAMX,Max engine temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD72,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMDNWEMX,Max engine temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD74,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+HYNWNMOT,Camshaft Speed hysteresis for the avoidance of nmot fluctuations,scalar,0x1CCD78,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+NNWMX,max. speed threshold for switch off camshaft closed loop control,scalar,0x1CCD7A,1,1,8,,40.0,1/min,interpolated-unverified,changed,,
+TMNWKH,Temperature threshold f. release of NW-cat.heat. functionality,scalar,0x1CCD7C,1,1,8,,0.75,Grad C,interpolated-unverified,changed,,
+TMNWMX,max engine temperature threshold to enable camshaft control,scalar,0x1CCD7E,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TVNWGE,Delay time until switchover enable following transmission intervention,scalar,0x1CCD80,1,1,8,,0.05,s,interpolated-unverified,same,,
+THYNWMN,Temperature hysteresis for the avoidance of tmot and toelk fluctuations,scalar,0x1CCDA4,1,1,16,,0.0234375,K,interpolated-unverified,same,,
+TOELNWEMN,Min. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDA6,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWEMX,Max. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCDA8,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMN,Min. threshold of oil temperature to enable camshaft control,scalar,0x1CCDAA,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMX,Max. threshold of oil temperature to enable camshaft control,scalar,0x1CCDAC,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+HYNMOTNW,Hysteresis f. nmot_w f. characteristic map addressing,scalar,0x1CCDCE,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NMKFNWLLA,threshold of engine speed to activate B_ll maps of desired angle outlet camshaft,scalar,0x1CD72A,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD750,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAAPP,Application value f. desired camshaft angle (exhaust),scalar,0x1CD752,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPFA,Application value: des. angle f. advanced pos. at exh. cam. jumps,scalar,0x1CD754,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPSA,Application value: des. angle f. retarded pos. at exh. cam. jumps,scalar,0x1CD756,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSGUDA,desired angle for small overlap diagnosis in the exhaust system outlet,scalar,0x1CD758,1,1,16,,0.0078125,Grad KW,interpolated-unverified,changed,,
+WNWSMNA,min value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD75A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNA,min value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD75A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXA,max value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD75C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXA,max value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD75C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD782,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+NMKFNWLLE,threshold of engine speed to activate B_ll maps of desired angle inlet camshaft,scalar,0x1CDE7C,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+WNWSAPFE,Calibration value: des. angle f. advanced position at jumps (intake camshaft),scalar,0x1CDEA2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPSE,Calibration value: des. angle f. retarded position at jumps (intake camshaft),scalar,0x1CDEA4,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSEAPP,application value for nominale angle of camshaft inlet valve,scalar,0x1CDEA6,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSGUDE,desired angle for small overlap diagnosis in the exhaust system inlet,scalar,0x1CDEA8,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNE,min value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDEAA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNE,min value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDEAA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXE,max value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDEAC,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXE,max value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDEAC,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDED2,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TTANWRMAXA,Time constant for output max. duty cycle camshaft controller (outlet),scalar,0x1CDF94,1,1,8,,1.0,s,interpolated-unverified,same,,
+TTANWRMAXE,Time constant for output max. duty cycle camshaft controller (inlet),scalar,0x1CE07A,1,1,8,,1.0,s,interpolated-unverified,same,,
+TNWWSPA,Time spent in a position f. des. angle jumps exh. cam.,scalar,0x1CD058,1,1,8,,0.2,s,interpolated-unverified,same,,
+TFWDKSOM,time constant for filtering desired throttle angle at kl15 off,scalar,0x1CCCE0,1,1,16,,1.0,s,interpolated-unverified,same,,
+DLRKREISST,"DLR, factor loop gain at the time of the engine start",scalar,0x1CCD0A,1,1,8,,0.0078125,-,interpolated-unverified,same,,
+TWDKNL,time after nmot = 0 and Kl.15 OFF until run after,scalar,0x1CCD0E,1,1,8,,0.1,s,interpolated-unverified,same,,
+DLRHAFTMN,Min. necessary I component in case of static friction,scalar,0x1CCD10,1,1,16,,0.19569471624266144,%,interpolated-unverified,same,,
+DLRHAFTST,Max. setpoint gradient to activate the static friction routine,scalar,0x1CCD12,1,1,16,,0.00152587890625,%DK,interpolated-unverified,same,,
+DWNWSVAS,Delta-desired angle outlet valve closed in locking position relative to TDC,scalar,0x1CCD4A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+DWNWSVEO,Delta-desired angle inlet valve opened in locking position relative to TDC,scalar,0x1CCD4C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TMXVDNWVP,Delay time after end of start to dissable diagnosis camshaft control DNWVPx,scalar,0x1CCD4E,1,1,16,,0.01,s,interpolated-unverified,same,,
+TOELDNWAMN,Min oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD50,1,1,16,,0.0234375,Grad C,interpolated-unverified,changed,,
+TOELDNWAMX,Max oil temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD52,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMN,Min oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD54,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELDNWEMX,Max oil temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD56,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+NDNWMX,maximum engine speed for diagnosis camshaft control,scalar,0x1CCD58,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMDNWAMX,Max engine temperature to enable diagnosis outlet camshaft control,scalar,0x1CCD5A,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMDNWEMX,Max engine temperature to enable diagnosis inlet camshaft control,scalar,0x1CCD5C,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+HYNWNMOT,Camshaft Speed hysteresis for the avoidance of nmot fluctuations,scalar,0x1CCD60,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NNWMX,max. speed threshold for switch off camshaft closed loop control,scalar,0x1CCD62,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+TMNWKH,Temperature threshold f. release of NW-cat.heat. functionality,scalar,0x1CCD64,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMNWMX,max engine temperature threshold to enable camshaft control,scalar,0x1CCD66,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TVNWGE,Delay time until switchover enable following transmission intervention,scalar,0x1CCD68,1,1,8,,0.05,s,interpolated-unverified,same,,
+THYNWMN,Temperature hysteresis for the avoidance of tmot and toelk fluctuations,scalar,0x1CCD8C,1,1,16,,0.0234375,K,interpolated-unverified,same,,
+TOELNWEMN,Min. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCD8E,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWEMX,Max. threshold of oil temperature to enable camshaft control (error of sensor),scalar,0x1CCD90,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMN,Min. threshold of oil temperature to enable camshaft control,scalar,0x1CCD92,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+TOELNWMX,Max. threshold of oil temperature to enable camshaft control,scalar,0x1CCD94,1,1,16,,0.0234375,Grad C,interpolated-unverified,same,,
+HYNMOTNW,Hysteresis f. nmot_w f. characteristic map addressing,scalar,0x1CCDB6,1,1,8,,40.0,1/min,interpolated-unverified,same,,
+NMKFNWLLA,threshold of engine speed to activate B_ll maps of desired angle outlet camshaft,scalar,0x1CD712,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWRAS,angle outlet valve closed in reference position relative to TDC,scalar,0x1CD738,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAAPP,Application value f. desired camshaft angle (exhaust),scalar,0x1CD73A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPFA,Application value: des. angle f. advanced pos. at exh. cam. jumps,scalar,0x1CD73C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPSA,Application value: des. angle f. retarded pos. at exh. cam. jumps,scalar,0x1CD73E,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSGUDA,desired angle for small overlap diagnosis in the exhaust system outlet,scalar,0x1CD740,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNA,min value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD742,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNA,min value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD742,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXA,max value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD744,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXA,max value of desired angle of outlet camshaft closes (TDC),scalar,0x1CD744,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVAS,Angle outlet valve closed in locking position relative to TDC,scalar,0x1CD76A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+NMKFNWLLE,threshold of engine speed to activate B_ll maps of desired angle inlet camshaft,scalar,0x1CDE64,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+WNWSAPFE,Calibration value: des. angle f. advanced position at jumps (intake camshaft),scalar,0x1CDE8A,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSAPSE,Calibration value: des. angle f. retarded position at jumps (intake camshaft),scalar,0x1CDE8C,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSEAPP,application value for nominale angle of camshaft inlet valve,scalar,0x1CDE8E,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSGUDE,desired angle for small overlap diagnosis in the exhaust system inlet,scalar,0x1CDE90,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNE,min value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDE92,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMNE,min value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDE92,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXE,max value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDE94,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWSMXE,max value of desired angle of inlet camshaft opens (TDC),scalar,0x1CDE94,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+WNWVEO,Angle inlet valve opened in locking position relative to TDC,scalar,0x1CDEBA,1,1,16,,0.0078125,Grad KW,interpolated-unverified,same,,
+TTANWRMAXA,Time constant for output max. duty cycle camshaft controller (outlet),scalar,0x1CDF7C,1,1,8,,1.0,s,interpolated-unverified,same,,
+TTANWRMAXE,Time constant for output max. duty cycle camshaft controller (inlet),scalar,0x1CE062,1,1,8,,1.0,s,interpolated-unverified,same,,
+TNWWSPA,Time spent in a position f. des. angle jumps exh. cam.,scalar,0x1CD040,1,1,8,,0.2,s,interpolated-unverified,same,,
+FUBAOF,Opening time for interval ignition,scalar,0x1C6CF0,1,1,16,,0.001,ms,interpolated-unverified,same,,
+SZABMAX,Savety margin to permitted dwell time,scalar,0x1C6CF2,1,1,16,,0.001,ms,interpolated-unverified,same,,
+ZWAPPL,Application interface ignition angle adjustment,scalar,0x1C6CF4,1,1,8,,0.75,Grad KW,interpolated-unverified,same,,
+FUBAOF,Opening time for interval ignition,scalar,0x1C6CEC,1,1,16,,0.001,ms,interpolated-unverified,same,,
+SZABMAX,Savety margin to permitted dwell time,scalar,0x1C6CEE,1,1,16,,0.001,ms,interpolated-unverified,same,,
+ZWAPPL,Application interface ignition angle adjustment,scalar,0x1C6CF0,1,1,8,,0.75,Grad KW,interpolated-unverified,same,,
+FUBAOF,Opening time for interval ignition,scalar,0x1C6CEE,1,1,16,,0.001,ms,interpolated-unverified,same,,
+SZABMAX,Savety margin to permitted dwell time,scalar,0x1C6CF0,1,1,16,,0.001,ms,interpolated-unverified,same,,
+ZWAPPL,Application interface ignition angle adjustment,scalar,0x1C6CF2,1,1,8,,0.75,Grad KW,interpolated-unverified,same,,
+FUBAOF,Opening time for interval ignition,scalar,0x1C6CF0,1,1,16,,0.001,ms,interpolated-unverified,same,,
+SZABMAX,Savety margin to permitted dwell time,scalar,0x1C6CF2,1,1,16,,0.001,ms,interpolated-unverified,same,,
+ZWAPPL,Application interface ignition angle adjustment,scalar,0x1C6CF4,1,1,8,,0.75,Grad KW,interpolated-unverified,same,,
+TSWKR,dead time for inquiry on total ignition timing retard,scalar,0x1C7176,1,1,8,,0.1,s,interpolated-unverified,same,,
+TSWKR,dead time for inquiry on total ignition timing retard,scalar,0x1C70B0,1,1,8,,0.1,s,interpolated-unverified,same,,
+DNTIPDYN,Turn on limit for Tip-In offset on max. spark retard,scalar,0x1C725A,1,1,8,,100.0,1/min/s,interpolated-unverified,same,,
+KRALH,load hysterisis for adaptation maps,scalar,0x1C7676,1,1,16,,0.0234375,%,interpolated-unverified,same,,
+TMDYNA,engine temperature threshold to enable load dynamic adaptation,scalar,0x1C7680,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+TMKRA,engine temperature threshold for adaptive knock control,scalar,0x1C7682,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+DMRAA,general torque margin quick trip,scalar,0x1D454C,1,1,16,,0.00152587890625,%,interpolated-unverified,same,,
+TMOTNMX,Engine temperature threshold for activation of increased engine speed limit,scalar,0x1D459A,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+ITNMXH,Dwell time below lower engine speed limit before activation of upper limit,scalar,0x1D459C,1,1,16,,0.1,s,interpolated-unverified,same,,
+NMAXDV,engine speed limit at fault of the vehicle speed signal,scalar,0x1D459E,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+DMRAA,general torque margin quick trip,scalar,0x1D454A,1,1,16,,0.00152587890625,%,interpolated-unverified,same,,
+TMOTNMX,Engine temperature threshold for activation of increased engine speed limit,scalar,0x1D4598,1,1,8,,0.75,Grad C,interpolated-unverified,same,,
+ITNMXH,Dwell time below lower engine speed limit before activation of upper limit,scalar,0x1D459A,1,1,16,,0.1,s,interpolated-unverified,same,,
+NMAXDV,engine speed limit at fault of the vehicle speed signal,scalar,0x1D459C,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+NMAXTRP,Max. Engine Speed for transmission protection,scalar,0x1D45E6,1,1,16,,0.25,1/min,interpolated-unverified,same,,
+TNMXH,Maximum duration of increased engine speed limit,scalar,0x1D45E8,1,1,16,,0.1,s,interpolated-unverified,same,,
+KFPNDSOL,Fuel low-pressure target psollnd_w vs rpm and rl_w [name from Ford A2L],map,0x1D2EBA,6,6,16,unsigned,0.1,kPa abs,CONFIRMED code+log 2026-11-18,,0x1D2EA2,0x1D2EAE
+FRLFSDP,Injection time correction vs fuel minus manifold pressure dppk_w [name from Ford A2L],curve,0x1D279E,11,1,16,unsigned,3.0517578125e-05,factor,CONFIRMED code+log 2026-11-18,,0x1D2788,
+KRKATE,"Injector constant, KRKTE type: ms per % fuel load at ~382 kPa difference [name from Ford A2L]",value,0x1D27B6,1,1,16,unsigned,1.0417e-05,ms/%,"CONFIRMED code+log 2026-11-18, stock 8261 = 0.0861",,,
+PNDMIN,Fuel pressure target lower clamp [name from Ford A2L],value,0x1D2F16,1,1,16,unsigned,0.1,kPa abs,"code 2026-11-18, stock 400",,,
+PNDMAX,Fuel pressure target upper clamp [name from Ford A2L],value,0x1D2F14,1,1,16,unsigned,0.1,kPa abs,"code 2026-11-18, stock 550",,,
+PSOLLND_START,Fuel pressure target after start,value,0x1D2F1C,1,1,16,unsigned,0.1,kPa abs,"code+log 2026-11-18, stock 500",,,
+PSOLLND_OVERRUN,Fuel pressure target in overrun fuel cut,value,0x1D2F22,1,1,16,unsigned,0.1,kPa abs,"code+log 2026-11-18, stock 550",,,

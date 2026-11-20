@@ -1,0 +1,41 @@
+Name            ,  Address, Size, Bitmask, Unit      , Signed, I,      Factor,  Offset, Comment
+nmot_w          , 0x7FB3AA,    2,  0x0000, rpm       ,      0, 0,        0.25,       0, Engine speed
+wped_w          , 0x7FAFE4,    2,  0x0000, %         ,      0, 0,   0.0015259,       0, Accelerator pedal
+pvdkds_w        , 0x7FB20A,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Boost pressure ACTUAL absolute (before throttle)
+plsol_w         , 0x8034C4,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Boost pressure TARGET absolute
+lamsoni_w       , 0x7FABDC,    2,  0x0000, lambda    ,      0, 0, 0.0002441406,       0, Lambda ACTUAL (front sensor)
+wkrm            , 0x8045BF,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard average (negative = timing pulled)
+zwout           , 0x7FB8EC,    1,  0x0000, deg       ,      1, 0,        0.75,       0, Ignition angle output
+tans            , 0x8041B1,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Intake air temperature
+rl_w            , 0x7FB90A,    2,  0x0000, %         ,      0, 0,   0.0234375,       0, Engine load ACTUAL
+lamsbg_w        , 0x7FAD98,    2,  0x0000, lambda    ,      0, 0, 0.0002441406,       0, Lambda TARGET
+ldtvm           , 0x8043E8,    1,  0x0000, %         ,      0, 0,    0.390625,       0, Wastegate valve duty
+ml_w            , 0x7FB904,    2,  0x0000, kg/h      ,      0, 0,         0.1,       0, Air mass flow
+rlsol_w         , 0x7FB018,    2,  0x0000, %         ,      0, 0,   0.0234375,       0, Engine load TARGET
+rlmax_w         , 0x8035C2,    2,  0x0000, %         ,      0, 0,   0.0234375,       0, Max load allowed (KFLDRX result)
+misol_w         , 0x7FAFFC,    2,  0x0000, %         ,      0, 0, 0.0015258789,       0, Torque target (indicated)
+mrfa_w          , 0x7FAF4C,    2,  0x0000, %         ,      0, 0, 0.0030517578,       0, Driver torque request
+wdkba           , 0x804420,    1,  0x0000, %         ,      0, 0,  0.39215686,       0, Throttle angle
+ps_w            , 0x7FB906,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Intake manifold pressure absolute
+pu_w            , 0x803518,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Ambient pressure
+wkr_1           , 0x8045B9,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard cylinder slot 1 (address less certain)
+wkr_2           , 0x8045BA,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard cylinder slot 2
+wkr_3           , 0x8045BB,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard cylinder slot 3
+wkr_4           , 0x8045BC,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard cylinder slot 4
+wkr_5           , 0x8045BD,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard cylinder slot 5
+tmot            , 0x8045ED,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Coolant temperature
+tabgm_w         , 0x803A42,    2,  0x0000, C         ,      0, 0,  0.01953125,     -50, Exhaust gas temperature (model)
+vfzg_w          , 0x7FAE96,    2,  0x0000, km/h      ,      0, 0,   0.0078125,       0, Vehicle speed
+gangi           , 0x8045F0,    1,  0x0000, gear      ,      0, 0,           1,       0, Gear detected by the ECU
+mibgrg_w        , 0x8042C4,    2,  0x0000, %         ,      0, 0, 0.0015258789,       0, Torque limit by gear (address less certain)
+tef_w           , 0x7FB2C2,    2,  0x0000, ms        ,      0, 0,       0.016,       0, Injection time (injector duty % = ms x rpm / 1200)
+pistnd_w        , 0x7FAE1C,    2,  0x0000, kPa       ,      0, 0,         0.1,       0, Fuel pressure ACTUAL absolute
+psollnd_w       , 0x803F74,    2,  0x0000, kPa       ,      0, 0,         0.1,       0, Fuel pressure TARGET absolute
+wnwe_w          , 0x7FB430,    2,  0x0000, degCA     ,      1, 0,   0.0078125,       0, Intake cam ACTUAL - intake valve opening angle deg CA
+wnwse_w         , 0x7FAB0A,    2,  0x0000, degCA     ,      1, 0,   0.0078125,       0, Intake cam TARGET
+wnwa_w          , 0x7FB42E,    2,  0x0000, degCA     ,      1, 0,   0.0078125,       0, Exhaust cam ACTUAL - exhaust valve closing angle deg CA
+wnwsa_w         , 0x7FAAF0,    2,  0x0000, degCA     ,      1, 0,   0.0078125,       0, Exhaust cam TARGET
+tapcm_w         , 0x803ED6,    2,  0x0000, %         ,      0, 0, 0.0015258789,       0, Fuel pump duty (PCM) - pump headroom before raising fuel pressure
+pssol_w         , 0x7FAA5A,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Intake manifold pressure TARGET absolute
+minmxl_w        , 0x7FAEF8,    2,  0x0000, %         ,      0, 0, 0.0015258789,       0, Rev limiter torque limit (air path) - shows if the limiter closes the throttle
+uhfm_w          , 0x80428E,    2,  0x0000, V         ,      0, 0,   0.0048828125,       0, MAF sensor voltage - near 5 V means the MAF is at its limit

@@ -1,0 +1,13 @@
+Name            ,  Address, Size, Bitmask, Unit      , Signed, I,      Factor,  Offset, Comment
+nmot_w          , 0x7FB3AA,    2,  0x0000, rpm       ,      0, 0,        0.25,       0, Engine speed
+wped_w          , 0x7FAFE4,    2,  0x0000, %         ,      0, 0,   0.0015259,       0, Accelerator pedal
+pvdkds_w        , 0x7FB20A,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Boost pressure ACTUAL absolute (before throttle)
+plsol_w         , 0x8034C4,    2,  0x0000, hPa       ,      0, 0,   0.0390625,       0, Boost pressure TARGET absolute
+lamsoni_w       , 0x7FABDC,    2,  0x0000, lambda    ,      0, 0, 0.0002441406,       0, Lambda ACTUAL (front sensor)
+wkrm            , 0x8045BF,    1,  0x0000, deg       ,      0, 0,       -0.75,       0, Knock retard average (negative = timing pulled)
+zwout           , 0x7FB8EC,    1,  0x0000, deg       ,      1, 0,        0.75,       0, Ignition angle output
+tans            , 0x8041B1,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Intake air temperature
+rl_w            , 0x7FB90A,    2,  0x0000, %         ,      0, 0,   0.0234375,       0, Engine load ACTUAL
+lamsbg_w        , 0x7FAD98,    2,  0x0000, lambda    ,      0, 0, 0.0002441406,       0, Lambda TARGET
+ldtvm           , 0x8043E8,    1,  0x0000, %         ,      0, 0,    0.390625,       0, Wastegate valve duty
+ml_w            , 0x7FB904,    2,  0x0000, kg/h      ,      0, 0,         0.1,       0, Air mass flow

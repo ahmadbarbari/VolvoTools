@@ -1,0 +1,15 @@
+Name            ,  Address, Size, Bitmask, Unit      , Signed, I,      Factor,  Offset, Comment
+nmot_w          , 0x7FB3AA,    2,  0x0000, rpm       ,      0, 0,        0.25,       0, Engine speed
+vfzg_w          , 0x7FAE96,    2,  0x0000, km/h      ,      0, 0,   0.0078125,       0, Vehicle speed
+tmot            , 0x8045ED,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Coolant temperature
+tans            , 0x8041B1,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Intake air temperature
+toel            , 0x804183,    1,  0x0000, C         ,      0, 0,       0.784,     -40, Oil temperature from oil level sensor (address 2 votes)
+toelk_w         , 0x804136,    2,  0x0000, C         ,      0, 0,   0.0234375, -273.15, Oil temperature used by ECU (151 votes)
+toltm           , 0x804134,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Oil temperature MODEL from coolant
+tolcor          , 0x804132,    1,  0x0000, C         ,      0, 0,        0.75,     -48, Oil temperature rpm-corrected
+tolc            , 0x804616,    1,  0x0000, C         ,      0, 0,           1,     -60, Oil temperature from combi/CAN
+toelst          , 0x804152,    1,  0x0000, C         ,      0, 0,       0.784,     -40, Oil temperature at start
+t1duty          , 0x804180,    1,  0x0000, -         ,      0, 0,  0.00390625,       0, Oil sensor temperature pulse duty
+B_tmpvalid      , 0x8045DB,    1,  0x0008, flag      ,      0, 0,           1,       0, Oil temperature valid (bit)
+ucpa            , 0x7FB1F8,    1,  0x0000, %         ,      0, 0,  0.39215686,       0, Clutch pedal position (adapted)
+B_kuplaus       , 0x7FA8D5,    1,  0x0001, flag      ,      0, 0,           1,       0, Clutch disengaged
